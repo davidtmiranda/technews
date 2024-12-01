@@ -1,0 +1,1430 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advertorial Landing Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://db.onlinewebfonts.com/c/da96eda991e10016c84c66248bd5799d?family=nb_international_proregular" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+   <script>
+      // Tailwind custom configuration
+      tailwind.config = {
+        theme: {
+          fontFamily: {
+            sans: ['nb_international_proregular', 'sans-serif'],
+          },
+          extend: {
+            colors: {
+              primary: '#088935',
+              body: 'rgb(33, 38, 35)',
+              dark: '#000000',
+            },
+            spacing: {
+              reading: '728px',
+            },
+            keyframes: {
+              fadeIn: {
+                "0%": { opacity: "0", transform: "translateY(20px)" },
+                "100%": { opacity: "1", transform: "translateY(0)" },
+              },
+            },
+            animation: {
+              fadeIn: "fadeIn 0.6s ease-out forwards",
+            },
+            fontSize: {
+              base: ['19px', '27px'],
+              h1: ['44px', {
+                lineHeight: '48px',
+                letterSpacing: '-0.6px',
+              }],
+              h2: ['34px', {
+                lineHeight: '38px',
+                letterSpacing: '-0.4px',
+              }],
+              h3: ['26px', {
+                lineHeight: '30px',
+                letterSpacing: '-0.3px',
+              }],
+              quote: ['21px', '32px'],
+              stats: ['24px', '28px'],
+              cta: ['18px', '22px'],
+            },
+            fontWeight: {
+              'extra-bold': '800',
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      @import url(https://db.onlinewebfonts.com/c/da96eda991e10016c84c66248bd5799d?family=nb_international_proregular);
+      
+      /* Base typography */
+      body {
+        font-family: 'nb_international_proregular', sans-serif;
+        font-size: 19px;
+        line-height: 27px;
+        color: rgb(33, 38, 35);
+      }
+
+      /* Headers */
+      h1 {
+        font-size: 44px;
+        line-height: 48px;
+        letter-spacing: -0.6px;
+        font-weight: 800;
+      }
+
+      h2 {
+        font-size: 34px;
+        line-height: 38px;
+        letter-spacing: -0.4px;
+        font-weight: 700;
+      }
+
+      h3 {
+        font-size: 26px;
+        line-height: 30px;
+        letter-spacing: -0.3px;
+        font-weight: 600;
+      }
+
+      /* Quotes and testimonials */
+      blockquote {
+        font-size: 21px;
+        line-height: 32px;
+        font-style: italic;
+      }
+
+      /* Stats and numbers */
+      .stat-number {
+        font-size: 24px;
+        line-height: 28px;
+        font-weight: 500;
+      }
+
+      /* CTA buttons */
+      .cta-button {
+        font-size: 18px;
+        line-height: 22px;
+        font-weight: 500;
+      }
+
+      /* Mobile adjustments */
+      @media (max-width: 768px) {
+        body {
+          font-size: 17px;
+          line-height: 25px;
+        }
+
+        h1 {
+          font-size: 36px;
+          line-height: 40px;
+        }
+
+        h2 {
+          font-size: 28px;
+          line-height: 32px;
+        }
+
+        h3 {
+          font-size: 22px;
+          line-height: 26px;
+        }
+
+        blockquote {
+          font-size: 19px;
+          line-height: 28px;
+        }
+      }
+
+      article p {
+        font-family: 'nb_international_proregular', sans-serif;
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 27px;
+        color: rgb(33, 38, 35);
+      }
+    </style>
+    <!-- Facebook Pixel Code -->
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '879943117666166');
+      fbq('track', 'PageView');
+    </script>
+    <noscript>
+      <img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=879943117666166&ev=PageView&noscript=1"/>
+    </noscript>
+    <!-- End Facebook Pixel Code -->
+    
+    <!-- Microsoft Clarity -->
+    <script type="text/javascript">
+      (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+      })(window, document, "clarity", "script", "p6zvja4qk6");
+    </script>
+    <!-- End Microsoft Clarity -->
+  </head>
+  <body class="bg-white text-body antialiased">
+    <!-- TechCrunch-style header -->
+    <header class="top-0 bg-black backdrop-blur-sm shadow-sm z-40">
+      <div class="container mx-auto">
+        <div class="flex items-center justify-between h-14 border-b border-gray-700 px-4">
+          <a href="https://elvian.ai" class="text-white">
+            <i class="fas fa-bars"></i>
+          </a>
+          <div class="font-medium text-lg tracking-wide uppercase text-white">
+            Business
+          </div>
+          <a href="https://elvian.ai" class="text-white">
+            <i class="fas fa-search"></i>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main
+      class="container mx-auto px-4 md:grid md:grid-cols-[1fr_300px] md:gap-8 mt-8"
+    >
+      <article
+        itemscope
+        itemtype="http://schema.org/Article"
+        class="max-w-reading mx-auto prose prose-lg max-w-none prose-p:text-base prose-p:font-normal prose-p:text-body"
+      >
+        <!-- Author info -->
+      
+
+        <!-- Hero Section -->
+        <div class="mb-12">
+          <h1
+            itemprop="headline"
+            class="text-h1 font-extra-bold text-gray-900 mb-6"
+          >
+            Silicon Valley CEO's AI Breakthrough Eliminates Need for Sales
+            Teams, Triples Revenue
+          </h1>
+          <p class="text-xl text-gray-600 mb-6">
+            As Featured in Forbes, Business Insider, and TechCrunch: How a
+            revolutionary AI system is replacing entire sales departments while
+            cutting costs by 85% and increasing sales by 300%.
+          </p>
+        </div>
+
+        <!-- Main content sections will go here -->
+        <div class="prose prose-lg max-w-none">
+          <!-- Content placeholder -->
+          <section class="space-y-8 opacity-0" data-animate>
+            <div class="aspect-video relative rounded-lg overflow-hidden shadow-lg">
+              <a href="#">  <!-- Will be updated by JS -->
+                <img
+                  loading="lazy"
+                  data-src="https://brasilpgs.com/wp-content/uploads/2024/11/WhatsApp-Image-2024-11-29-at-15.08.18.jpeg"
+                  class="object-cover w-full h-full"
+                  alt="AI Technology Illustration"
+                />
+              </a>
+            </div>
+
+            <div class="space-y-6">
+              <p class="text-base font-sans text-body">
+                Michael Chen, founder and CEO of a fast-growing tech company,
+                reveals how he transformed his business from the brink of
+                collapse to explosive growth after discovering an AI solution
+                that's helping thousands of business owners eliminate their
+                dependency on traditional sales teams - while dramatically
+                increasing revenue without the astronomical costs and headaches
+                of managing human sales teams.
+              </p>
+
+              <p class="text-base font-sans text-body">
+                Before finding the technology that would transform his company
+                forever, Chen was trapped in what he calls "the modern
+                entrepreneur's nightmare" - a never-ending cycle of hiring,
+                training, and losing salespeople while watching his competition
+                grow faster.
+              </p>
+
+              <blockquote class="text-quote font-sans italic bg-gray-50 p-6 rounded-lg border-l-4 border-primary my-8">
+                "I couldn't sleep at night," Chen recalls. "Every morning, I'd
+                check my phone dreading another resignation email. Every
+                evening, I'd look at missed opportunities and leads that died
+                because we couldn't handle the volume. It was like watching
+                money burn while being powerless to stop it."
+              </blockquote>
+            </div>
+          </section>
+
+          <section class="space-y-8 opacity-0 mt-16" data-animate>
+            <h2 class="text-h2 font-bold text-gray-900 mb-4">
+              The Sales Team Trap: A Silent Business Killer
+            </h2>
+
+            <p class="text-base font-sans text-body">
+              "What truly exhausts business owners isn't just making sales -
+              it's watching opportunities slip away while dealing with endless
+              hiring, training, and team management," explains Dr. Alex
+              Morrison.
+            </p>
+
+            <div class="my-8">
+              <h3 class="text-h3 font-semibold text-gray-900 mb-3">
+                The real costs that every business owner knows:
+              </h3>
+
+              <div class="grid md:grid-cols-2 gap-4">
+                <div class="stat-card group">
+                  <div class="flex justify-between items-center">
+                    <span class="text-base font-sans text-gray-600">Base salary + commission</span>
+                    <span class="text-stats font-sans font-bold text-primary">$75,000-95,000</span>
+                  </div>
+                  <span class="text-base font-sans text-gray-600">per year</span>
+                </div>
+
+                <div class="stat-card group">
+                  <div class="flex justify-between items-center">
+                    <span class="text-base font-sans text-gray-600">Benefits & overhead</span>
+                    <span class="text-stats font-sans font-bold text-primary">$25,000-35,000</span>
+                  </div>
+                  <span class="text-base font-sans text-gray-600">per year</span>
+                </div>
+
+                <div class="stat-card group">
+                  <div class="flex justify-between items-center">
+                    <span class="text-base font-sans text-gray-600">Training & onboarding</span>
+                    <span class="text-stats font-sans font-bold text-primary">3-4 months</span>
+                  </div>
+                  <span class="text-base font-sans text-gray-600">lost productivity</span>
+                </div>
+
+                <div class="stat-card group">
+                  <div class="flex justify-between items-center">
+                    <span class="text-base font-sans text-gray-600">Average turnover</span>
+                    <span class="text-stats font-sans font-bold text-primary">28%</span>
+                  </div>
+                  <span class="text-base font-sans text-gray-600"
+                    >yearly in sales roles</span
+                  >
+                </div>
+
+                <div class="stat-card group md:col-span-2">
+                  <div class="flex justify-between items-center">
+                    <span class="text-base font-sans text-gray-600">Coverage</span>
+                    <span class="text-stats font-sans font-bold text-primary"
+                      >Limited to 40-hour work week</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="space-y-6">
+              <p class="text-base font-sans text-body">
+                "Most business owners are living this reality," explains Dr.
+                Morrison, AI Research Director at Stanford's Business Innovation
+                Lab.
+              </p>
+
+              <blockquote class="text-quote font-sans italic bg-gray-50 p-6 rounded-lg border-l-4 border-primary my-8">
+                "You invest months getting someone fully trained, and just when
+                they become effective, they leave - taking their knowledge and
+                your investment with them."
+              </blockquote>
+            </div>
+          </section>
+
+          <section class="space-y-8 opacity-0 mt-16" data-animate>
+            <h2 class="text-h2 font-bold text-gray-900 mb-4">
+              The Traditional Solutions That Make Things Worse
+            </h2>
+
+            <p class="text-base font-sans text-body">
+              Every business owner knows this story. You try everything:
+            </p>
+
+            <blockquote class="text-quote font-sans italic bg-gray-50 p-6 rounded-lg border-l-4 border-primary my-8">
+              "First, you hire more people. Then you need better CRM systems to
+              manage them. More training programs to keep them effective. Higher
+              commissions to retain them. And finally, managers to manage the
+              managers," Chen explains, shaking his head.
+            </blockquote>
+
+            <div class="my-8">
+              <h3 class="text-h3 font-semibold text-gray-900 mb-3">
+                The real cost? It gets worse with each "solution":
+              </h3>
+
+              <div class="grid gap-4">
+                <div class="stat-card group hover:scale-[1.02]">
+                  <div class="flex justify-between items-center gap-4">
+                    <span class="text-base font-sans text-gray-600"
+                      >New sales rep cost before first sale</span
+                    >
+                    <span class="text-stats font-sans font-bold text-primary">$100k+</span>
+                  </div>
+                </div>
+
+                <div class="stat-card group hover:scale-[1.02]">
+                  <div class="flex justify-between items-center gap-4">
+                    <span class="text-base font-sans text-gray-600">CRM limitations</span>
+                    <span class="text-stats font-sans font-bold text-primary">Can't make calls</span>
+                  </div>
+                </div>
+
+                <div class="stat-card group hover:scale-[1.02]">
+                  <div class="flex justify-between items-center gap-4">
+                    <span class="text-base font-sans text-gray-600">Training impact</span>
+                    <span class="text-stats font-sans font-bold text-primary">1000s hours/year</span>
+                  </div>
+                </div>
+
+                <div class="stat-card group hover:scale-[1.02]">
+                  <div class="flex justify-between items-center gap-4">
+                    <span class="text-base font-sans text-gray-600">Commission effect</span>
+                    <span class="text-stats font-sans font-bold text-primary">Slashed margins</span>
+                  </div>
+                </div>
+
+                <div class="stat-card group hover:scale-[1.02]">
+                  <div class="flex justify-between items-center gap-4">
+                    <span class="text-base font-sans text-gray-600">Management result</span>
+                    <span class="text-stats font-sans font-bold text-primary">More complexity</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="space-y-6">
+              <p class="text-base font-sans text-body">
+                "I was trapped in this cycle," Chen admits. "Every month,
+                writing bigger checks, hoping things would improve. $50,000 per
+                month just replacing people who left. Meanwhile, watching
+                perfectly good leads die because we couldn't handle the volume."
+              </p>
+
+              <blockquote
+                class="text-quote font-sans italic bg-gray-50 p-4 rounded-r-lg border-l-4 border-primary my-8"
+              >
+                "The worst part? The more you invest in this traditional
+                approach, the bigger your problems become. It's like trying to
+                fill a leaking bucket by adding more water."
+              </blockquote>
+            </div>
+          </section>
+
+          <section class="space-y-8 opacity-0 mt-16" data-animate>
+            <h2 class="text-h2 font-bold text-gray-900 mb-4">The Breaking Point</h2>
+
+            <div
+              class="aspect-video relative rounded-lg overflow-hidden shadow-lg mb-8"
+            >
+              <img
+                loading="lazy"
+                data-src="https://brasilpgs.com/wp-content/uploads/2024/11/WhatsApp-Image-2024-11-29-at-15.22.37.jpeg"
+                class="object-cover w-full h-full"
+                alt="Business Crisis Illustration"
+              />
+            </div>
+
+            <blockquote class="text-quote font-sans italic bg-gray-50 p-6 rounded-lg border-l-4 border-primary my-8">
+              "It was the moment every business owner dreads," Chen recalls, his
+              voice tight. "Peak season. Millions in opportunities. And my
+              entire sales team threatening to walk."
+            </blockquote>
+
+            <div
+              class="bg-white border border-gray-200 shadow-sm p-6 rounded-r-lg space-y-2"
+            >
+              <h3 class="font-semibold text-red-700">
+                The nightmare scenario was unfolding:
+              </h3>
+              <ul class="space-y-2">
+                <li class="flex items-center gap-2">
+                  <svg
+                    class="w-5 h-5 text-red-500"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 101.414 1.414L10 11.414l1.293-1.293a1 1 00-1.414-1.414L11.414 10l1.293-1.293a1 1 00-1.414-1.414L10 8.586 8.707 7.293z"
+                    />
+                  </svg>
+                  <span>Best performer poached by competitor</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <svg
+                    class="w-5 h-5 text-red-500"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 101.414 1.414L10 11.414l1.293-1.293a1 1 00-1.414-1.414L11.414 10l1.293-1.293a1 1 00-1.414-1.414L10 8.586 8.707 7.293z"
+                    />
+                  </svg>
+                  <span>Two more threatening resignation</span>
+                </li>
+                <!-- Add remaining list items with the same structure -->
+              </ul>
+            </div>
+
+            <p class="text-base font-sans text-body my-8">
+              "I'll never forget that night," Chen continues. "3 AM in my
+              office, watching perfectly good leads die in our system. Each
+              notification another missed opportunity. Another lost deal. Our
+              best performer had just left, taking five years of knowledge with
+              him.
+            </p>
+
+            <div
+              class="bg-white border border-gray-200 shadow-sm p-6 rounded-r-lg space-y-2"
+            >
+              <h3 class="font-semibold text-yellow-700">
+                The Reality Hit Hard:
+              </h3>
+              <ul class="space-y-2">
+                <li class="flex items-center gap-2">
+                  <svg
+                    class="w-5 h-5 text-yellow-500"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z"
+                    />
+                  </svg>
+                  <span>Millions in deals at risk</span>
+                </li>
+                <!-- Add remaining list items with the same structure -->
+              </ul>
+            </div>
+
+            <div class="space-y-6 mt-8">
+              <p class="text-base font-sans text-body">
+                At a San Francisco tech summit, Chen met Dr. James Walker, whose
+                research was revolutionizing how companies think about growth.
+              </p>
+
+              <blockquote
+                class="text-quote font-sans italic bg-gray-50 p-4 rounded-r-lg border-l-4 border-primary my-8"
+              >
+                "Let me share something interesting," Dr. Walker said, pulling
+                up real-time sales data. "See these companies? Great products.
+                Strong demand. Talented teams. Yet they're all hitting the same
+                wall - not because of their people, but because of natural human
+                limitations."
+              </blockquote>
+
+              <p class="font-semibold text-base font-sans text-body">
+                He leaned forward, eyes intense:
+              </p>
+
+              <blockquote class="text-quote font-sans italic bg-gray-50 p-6 rounded-lg border-l-4 border-primary my-8">
+                "But what if I told you we've found a way to break through that
+                wall? What if you could take your best sales practices and
+                multiply them infinitely, without the limitations of time,
+                coverage, or human capacity?"
+              </blockquote>
+
+              <p class="text-xl font-semibold text-primary">
+                What Dr. Walker revealed next would change everything...
+              </p>
+            </div>
+          </section>
+
+          <section class="space-y-8 opacity-0 mt-16" data-animate>
+            <h2 class="text-h2 font-bold text-gray-900 mb-4">The AI Sales Revolution</h2>
+
+            <div
+              class="aspect-video relative rounded-lg overflow-hidden shadow-lg mb-8"
+            >
+              <img
+                loading="lazy"
+                data-src="https://brasilpgs.com/wp-content/uploads/2024/11/WhatsApp-Image-2024-11-29-at-16.26.01.jpeg"
+                class="object-cover w-full h-full"
+                alt="AI Sales Revolution Illustration"
+              />
+            </div>
+
+            <p class="text-base font-sans text-body">
+              What happened next transformed not just Chen's business, but
+              revealed the future of sales itself:
+            </p>
+
+            <blockquote
+              class="text-quote font-sans italic bg-gray-50 p-6 rounded-r-lg border-l-4 border-primary my-8"
+            >
+              "We've developed something revolutionary," Dr. Walker explained.
+              "Real voice AI that's indistinguishable from your best human
+              salespeople. Not chatbots, not automated messages - but natural,
+              human-like phone conversations that engage, persuade, and close
+              deals."
+            </blockquote>
+
+            <p class="text-base font-sans text-body font-medium mb-4">
+              This was different from anything seen before:
+            </p>
+
+            <blockquote class="text-quote font-sans italic bg-gray-50 p-6 rounded-lg border-l-4 border-primary my-8">
+              "Imagine your top performer's perfect sales call - their voice
+              tone, their pitch, their timing, their objection handling - now
+              multiply that across thousands of real phone conversations
+              happening simultaneously. It sounds exactly like a skilled human
+              sales professional, but operates 24/7 with perfect consistency."
+            </blockquote>
+
+            <div class="performance-metrics bg-gray-50 p-6 rounded-lg my-6">
+                  <h3 class="text-lg font-bold text-gray-900 mb-4">System Performance Results</h3>
+                  
+                  <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="metric-card cursor-pointer hover:shadow-md transition-all">
+                      <h4 class="font-bold text-gray-900 mb-2">First 24 Hours:</h4>
+                      <ul class="space-y-2 text-gray-700">
+                        <li>147 real phone conversations</li>
+                        <li>28 qualified opportunities</li>
+                        <li>4 deals closed on calls</li>
+                        <li>Perfect voice quality reported</li>
+                      </ul>
+                    </div>
+                    
+                    <div class="metric-card cursor-pointer hover:shadow-md transition-all">
+                      <h4 class="font-bold text-gray-900 mb-2">First Week:</h4>
+                      <ul class="space-y-2 text-gray-700">
+                        <li>800+ natural sales calls</li>
+                        <li>42 new customers from calls</li>
+                        <li>24/7 voice coverage</li>
+                        <li>Cost reduced by 67%</li>
+                      </ul>
+                    </div>
+                    
+                    <div class="metric-card cursor-pointer hover:shadow-md transition-all">
+                      <h4 class="font-bold text-gray-900 mb-2">First Month:</h4>
+                      <ul class="space-y-2 text-gray-700">
+                        <li>Revenue increased 215%</li>
+                        <li>Operating costs down 71%</li>
+                        <li>Consistent voice performance</li>
+                        <li>Global phone coverage</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+            
+
+            <blockquote
+              class="text-quote font-sans italic bg-gray-50 p-6 rounded-r-lg border-l-4 border-primary my-8"
+            >
+              "I was stunned by how natural it sounded," Chen recalls.
+              "Customers had no idea they were talking to AI. We were having
+              real, meaningful phone conversations at 3 AM, handling complex
+              objections, and closing deals while I slept. This wasn't
+              automation - this was true sales transformation."
+            </blockquote>
+          </section>
+
+       
+
+        
+
+          <section class="space-y-8 opacity-0 mt-16" data-animate>
+            <div class="bg-gradient-to-r from-gray-50 to-gray-50 p-8 rounded-lg shadow-sm">
+              <p class="text-xl font-medium text-primary mb-4">
+                "This revolutionary system, now known as Elvian, represents more than just technology - it's the future of sales itself."
+              </p>
+            </div>
+          </section>
+
+          <section class="space-y-8 opacity-0 mt-16" data-animate>
+            <h2 class="text-h2 font-bold text-gray-900 mb-4">The Market Validation</h2>
+
+            <p class="text-base font-sans text-body">
+              The results weren't just anecdotal. Major research firms quickly
+              took notice:
+            </p>
+
+            <div class="grid gap-6 my-8">
+              <!-- Research Quote Cards -->
+              <div class="stat-card group hover:scale-[1.01]">
+                <div class="flex items-center gap-4 mb-2">
+                  <span class="font-bold text-primary"
+                    >McKinsey Global Institute</span
+                  >
+                </div>
+                <p class="text-quote font-sans italic text-gray-600">
+                  "AI-powered sales systems show potential for
+                  <span class="font-semibold text-primary"
+                    >85% cost reduction</span
+                  >
+                  while increasing conversion rates by up to
+                  <span class="font-semibold text-primary">300%</span>."
+                </p>
+              </div>
+
+              <div class="stat-card group hover:scale-[1.01]">
+                <div class="flex items-center gap-4 mb-2">
+                  <span class="font-bold text-primary"
+                    >Stanford Business Review</span
+                  >
+                </div>
+                <p class="text-quote font-sans italic text-gray-600">
+                  "Companies using AI sales systems report unprecedented
+                  scalability and consistency in their sales operations."
+                </p>
+              </div>
+
+              <div class="stat-card group hover:scale-[1.01]">
+                <div class="flex items-center gap-4 mb-2">
+                  <span class="font-bold text-primary">Gartner Research</span>
+                </div>
+                <p class="text-quote font-sans italic text-gray-600">
+                  "By 2025, businesses not using AI in sales will find
+                  themselves at a significant competitive disadvantage."
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section class="space-y-8 opacity-0 mt-16" data-animate>
+            <h2 class="text-h2 font-bold text-gray-900 mb-4">
+              The Real-World Impact: The Numbers Don't Lie
+            </h2>
+
+            <blockquote class="text-quote font-sans italic text-lg">
+              "Let me show you exactly what happened," Chen says, pulling up his
+              dashboard. "Six months ago, we were burning $200,000 monthly on
+              our sales team, missing opportunities, and losing top performers
+              constantly."
+            </blockquote>
+
+            <!-- Before/After Comparison -->
+            <div class="grid md:grid-cols-2 gap-8 my-8">
+              <!-- Before -->
+              <div class="bg-white border border-gray-200 shadow-sm p-6 rounded-lg">
+                <h4 class="text-h3 font-semibold text-red-700 mb-4">
+                  Before AI Implementation
+                </h4>
+                <div class="stat-card warning">
+                  <span class="text-stats font-sans font-bold text-primary"
+                    >$200,000</span
+                  >
+                  <span class="text-base font-sans text-body text-gray-600">Monthly Sales Cost</span>
+                </div>
+              </div>
+
+              <!-- After -->
+              <div class="bg-gray-50 p-6 rounded-lg">
+                <h4 class="text-h3 font-semibold text-primary mb-4">
+                  After AI Implementation
+                </h4>
+                <div class="grid gap-4">
+                  <div class="stat-card success">
+                    <span class="text-stats font-sans font-bold text-primary"
+                      >$30,000</span
+                    >
+                    <span class="text-base font-sans text-body text-gray-600"
+                      >Total Monthly Cost</span
+                    >
+                  </div>
+                  <div class="stat-card success">
+                    <span class="text-stats font-sans font-bold text-primary"
+                      >312%</span
+                    >
+                    <span class="text-base font-sans text-body text-gray-600">Revenue Increase</span>
+                  </div>
+                  <div class="stat-card success">
+                    <span class="text-stats font-sans font-bold text-primary"
+                      >24/7</span
+                    >
+                    <span class="text-base font-sans text-body text-gray-600">Lead Conversion</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="space-y-6">
+              <p class="text-base font-sans text-body"></p>
+                He smiles. "Today? We spend $30,000 total, revenue is up 312%,
+                and we're converting leads 24/7. The system makes perfect calls
+                around the clock, handles payments automatically, and improves
+                with every conversation."
+              </p>
+
+              <blockquote
+                class="text-quote font-sans italic bg-gray-50 p-4 rounded-r-lg border-l-4 border-primary my-8"
+              >
+                "While competitors struggle with hiring and turnover, we're
+                focused purely on growth. No drama, no headaches - just
+                consistent, predictable results."
+              </blockquote>
+            </div>
+          </section>
+
+          <section class="space-y-8 opacity-0 mt-16" data-animate>
+            <h2 class="text-h2 font-bold text-gray-900 mb-4">
+              The Market Response: Real Results
+            </h2>
+
+            <p class="text-base font-sans text-body">
+              Word spread quickly. Here's what early adopters reported:
+            </p>
+
+            <div class="grid gap-6 my-8">
+              <!-- Testimonial Cards -->
+              <div class="stat-card testimonial cursor-pointer hover:shadow-md transition-all">
+                <div class="flex items-center gap-4 mb-3">
+                  <div class="font-bold text-gray-900">Sarah Johnson</div>
+                  <div class="text-base font-sans text-body text-gray-500">E-commerce CEO</div>
+                </div>
+                <p class="text-quote font-sans italic text-gray-700">
+                  "The voice quality is incredible - customers can't tell it's
+                  AI. We're closing deals at 3 AM now, and our revenue
+                  <span class="font-semibold text-primary"
+                    >tripled in two months</span
+                  >. The system just gets smarter every day."
+                </p>
+              </div>
+
+              <div class="stat-card testimonial cursor-pointer hover:shadow-md transition-all">
+                <div class="flex items-center gap-4 mb-3">
+                  <div class="font-bold text-gray-900">David Martinez</div>
+                  <div class="text-base font-sans text-body text-gray-500">SaaS Founder</div>
+                </div>
+                <p class="text-quote font-sans italic text-gray-700">
+                  "Perfect pitch, amazing follow-up, every single time, and no
+                  scale limit? Incredible! We're doing more sales with AI than
+                  we did with 5 people. And it keeps getting better
+                  automatically."
+                </p>
+              </div>
+
+              <div class="stat-card testimonial cursor-pointer hover:shadow-md transition-all">
+                <div class="flex items-center gap-4 mb-3">
+                  <div class="font-bold text-gray-900">James Wilson</div>
+                  <div class="text-base font-sans text-body text-gray-500">Agency Owner</div>
+                </div>
+                <p class="text-quote font-sans italic text-gray-700">
+                  "Natural voice calls, instant payment processing, and flawless
+                  follow-up across all channels. Scaled nationally without
+                  adding a single person. It just works, 24/7."
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section class="space-y-8 opacity-0 mt-16" data-animate>
+            <h2 class="text-h2 font-bold text-gray-900 mb-4">
+              The question on everyone's mind was simple: "How does it actually
+              work?"
+            </h2>
+
+            <div class="space-y-6">
+              <p class="text-base font-sans text-body">
+                Dr. Walker revealed Elvian's live dashboard - an AI sales system
+                making hundreds of sales calls simultaneously.
+              </p>
+
+              <blockquote class="text-quote font-sans italic bg-gray-50 p-6 rounded-lg border-l-4 border-primary my-8">
+                "This is Elvian Intelligence in action," he explained.
+              </blockquote>
+
+              <p class="text-base font-sans text-body">
+                The system wasn't just talking - it was thinking, adapting, and
+                converting. Every conversation fed into a massive learning
+                engine that continuously improved its performance. Like having
+                your best salesperson's skills multiplied by a thousand, getting
+                better every single day.
+              </p>
+
+              <!-- Results Stats -->
+              <div class="bg-gray-50 p-6 rounded-lg mt-8">
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
+                  <div class="text-center">
+                    <span class="text-stats font-sans font-bold text-primary"
+                      >1,000+</span
+                    >
+                    <span class="text-base font-sans text-body text-gray-600"
+                      >Daily Conversations</span
+                    >
+                  </div>
+                  <div class="text-center">
+                    <span class="text-stats font-sans font-bold text-primary"
+                      >24/7</span
+                    >
+                    <span class="text-base font-sans text-body text-gray-600">Coverage</span>
+                  </div>
+                  <div class="text-center md:col-span-1 col-span-2">
+                    <span class="text-stats font-sans font-bold text-primary"
+                      >400%</span
+                    >
+                    <span class="text-base font-sans text-body text-gray-600">Growth in 90 Days</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+   <!-- Complex Sales Section -->
+   <section class="space-y-8 opacity-0 mt-16" data-animate>
+      <h2 class="text-h2 font-bold text-gray-900 mb-4">But What About Complex Sales?</h2>
+
+   
+        <blockquote class="text-quote font-sans italic">
+          <span class="block text-primary font-semibold mb-4">"I was dead wrong,"</span>
+          he admits now. "The system doesn't just handle complex sales - it excels at them. It manages decision makers, handles sophisticated objections, and follows complex sales sequences as good as my best sales team."
+        </blockquote>
+      
+    </section>
+
+      <!-- Market Opportunity Section -->
+      <section class="space-y-8 opacity-0 mt-16" data-animate>
+            <h2 class="text-h2 font-bold text-gray-900 mb-4">The Window of Opportunity</h2>
+
+            <div class="space-y-6">
+              <div class="bg-gradient-to-r from-gray-50 to-gray-50 p-6 rounded-lg shadow-sm">
+                <p class="text-base font-sans text-body font-medium text-primary">
+                  We're at a tipping point. The companies that move first in their markets will have an insurmountable advantage.
+                </p>
+              </div>
+
+              <p class="text-base font-sans text-body">
+                He's right. Early adopters are seeing something remarkable: not just cost savings and increased sales, but a fundamental transformation in how their businesses operate.
+              </p>
+
+            
+                <blockquote class="text-quote font-sans italic relative z-10">
+                  <p class="text-base font-sans text-body">
+                    "Think about the first companies that adopted e-commerce, or cloud computing," Chen adds. "The same thing is happening with AI sales right now. The window to be a leader rather than a follower is small - and it's closing fast."
+                  </p>
+                </blockquote>
+           
+
+              <!-- Visual Timeline -->
+              <div class="grid grid-cols-3 gap-4 mt-8">
+                <div class="text-center p-4 rounded-lg bg-gray-50">
+                  <div class="font-bold text-primary">Past</div>
+                  <div class="text-base font-sans text-body text-gray-600">Traditional Sales</div>
+                </div>
+                <div class="text-center p-4 rounded-lg bg-gray-50">
+                  <div class="font-bold text-primary">Present</div>
+                  <div class="text-base font-sans text-body text-gray-600">AI Adoption Window</div>
+                </div>
+                <div class="text-center p-4 rounded-lg bg-gray-50">
+                  <div class="font-bold text-primary">Future</div>
+                  <div class="text-base font-sans text-body text-gray-600">Market Standard</div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Limited Opportunity Section -->
+          <section class="space-y-8 opacity-0 mt-16" data-animate></section>
+            <h2 class="text-h2 font-bold text-gray-900 mb-4">A Limited Opportunity</h2>
+
+            <!-- Opportunity Counter -->
+            <div class=" bg-gray-800 text-white p-8 rounded-lg shadow-lg">
+              <div class="text-center space-y-4">
+                <p class="text-base font-sans text-white font-medium">Limited to</p>
+                <div class="text-5xl font-bold">100</div>
+                <p class="text-base font-sans text-white">Qualified Businesses</p>
+              </div>
+            </div>
+
+            <blockquote class="text-quote font-sans italic bg-gray-50 p-6 rounded-r-lg border-l-4 border-primary my-8">
+              "We're looking for forward-thinking business owners who understand the opportunity in front of them," Dr. Walker explains. "People who are ready to lead rather than follow."
+            </blockquote>
+
+            <!-- Benefits Grid -->
+            <div class="grid md:grid-cols-2 gap-6 my-8">
+              <div class="stat-card success">
+                <div class="flex items-start gap-3">
+                  <svg class="w-6 h-6 text-primary flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                  </svg>
+                  <span class="text-base font-sans text-body">Complete AI Sales System</span>
+                </div>
+              </div>
+              <div class="stat-card success">
+                <div class="flex items-start gap-3">
+                  <svg class="w-6 h-6 text-primary flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                  </svg>
+                  <span class="text-base font-sans text-body">Seamless Integration</span>
+                </div>
+              </div>
+              <div class="stat-card success">
+                <div class="flex items-start gap-3">
+                  <svg class="w-6 h-6 text-primary flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                  </svg>
+                  <span class="text-base font-sans text-body">Priority Support</span>
+                </div>
+              </div>
+              <div class="stat-card success">
+                <div class="flex items-start gap-3">
+                  <svg class="w-6 h-6 text-primary flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                  </svg>
+                  <span class="text-base font-sans text-body">Comprehensive Training</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Early Adopter Benefits -->
+            <div class="bg-gray-50 p-6 rounded-lg border border-gray-200">
+              <h3 class="text-h3 font-semibold text-primary mb-4">Early Adopter Benefits:</h3>
+              <ul class="space-y-3">
+                <li class="flex items-center gap-2">
+                  <svg class="w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/>
+                  </svg>
+                  <span class="text-base font-sans text-body">50% off standard pricing</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <svg class="w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/>
+                  </svg>
+                  <span class="text-base font-sans text-body">Exclusive advanced features</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <svg class="w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/>
+                  </svg>
+                  <span class="text-base font-sans text-body">First-mover market advantage</span>
+                </li>
+              </ul>
+            </div>
+
+            <blockquote class="text-quote font-sans italic text-lg">
+              "But most importantly," Chen emphasizes, "they get time. Time before their competitors catch up. Time to establish market dominance. Time to scale without limits."
+            </blockquote>
+          </section>
+
+          <!-- Time to Act Section -->
+          <section class="space-y-8 opacity-0 mt-16" data-animate>
+            <h2 class="text-h2 font-bold text-gray-900 mb-4">The Time to Act is Now</h2>
+
+            <div class="bg-gray-800 text-white p-8 rounded-lg shadow-lg space-y-6">
+              <p class="text-xl font-medium text-white">The opportunity is clear, but the window is closing fast.</p>
+              
+              <div class="grid md:grid-cols-3 gap-4 my-8">
+                <div class="bg-white/10 p-4 rounded-lg text-center">
+                  <div class="font-bold text-2xl">100</div>
+                  <div class="text-base font-sans text-white text-primary">Available Spots</div>
+                </div>
+                <div class="bg-white/10 p-4 rounded-lg text-center">
+                  <div class="font-bold text-2xl">1st</div>
+                  <div class="text-base font-sans text-white text-primary">In Market</div>
+                </div>
+                <div class="bg-white/10 p-4 rounded-lg text-center">
+                  <div class="font-bold text-2xl">Now</div>
+                  <div class="text-base font-sans text-white text-primary">Is The Time</div>
+                </div>
+              </div>
+
+              <blockquote class="text-quote font-sans italic border-l-4 border-white/20 pl-4 bg-transparent" style="background-color: rgba(255, 255, 255, 0.1);">
+                "We've seen it time and again," Dr. Walker explains. "The first company in each market to adopt Elvian becomes nearly impossible to compete against. They simply operate at a level traditional sales teams can't match."
+              </blockquote>
+            </div>
+          </section>
+
+          <!-- Final CTA Section -->
+          <section class="mt-16 bg-gradient-to-br from-gray-900 to-gray-800 text-white p-8 md:p-12 rounded-lg shadow-2xl text-center">
+  <!-- Urgency Banner -->
+  <div class="bg-red-600 text-white py-2 px-4 rounded-full inline-block mb-6 animate-pulse">
+    <span class="font-bold">🔥 Only 12 Early Access Spots Remaining</span>
+  </div>
+
+  <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">
+    Transform Your Sales Within 24 Hours
+  </h2>
+
+  <!-- Value Props -->
+  <div class="grid md:grid-cols-3 gap-4 mb-8">
+    <div class="bg-white/10 p-4 rounded-lg backdrop-blur-sm">
+      <div class="text-3xl font-bold text-primary mb-1">50%</div>
+      <div class="text-sm">Early Access Discount</div>
+      <div class="text-xs text-yellow-400">Expires Soon</div>
+    </div>
+    <div class="bg-white/10 p-4 rounded-lg backdrop-blur-sm">
+      <div class="text-3xl font-bold text-primary mb-1">24/7</div>
+      <div class="text-sm">Instant Activation</div>
+      <div class="text-xs text-yellow-400">No Setup Time</div>
+    </div>
+    <div class="bg-white/10 p-4 rounded-lg backdrop-blur-sm">
+      <div class="text-3xl font-bold text-primary mb-1">30d</div>
+      <div class="text-sm">Money-Back Guarantee</div>
+      <div class="text-xs text-yellow-400">Risk-Free Trial</div>
+    </div>
+  </div>
+
+  <!-- Social Proof -->
+  <div class="flex items-center justify-center mb-8">
+    <div class="flex -space-x-2">
+      <img src="https://randomuser.me/api/portraits/men/1.jpg" class="w-8 h-8 rounded-full border-2 border-white" alt="User">
+      <img src="https://randomuser.me/api/portraits/women/2.jpg" class="w-8 h-8 rounded-full border-2 border-white" alt="User">
+      <img src="https://randomuser.me/api/portraits/men/3.jpg" class="w-8 h-8 rounded-full border-2 border-white" alt="User">
+    </div>
+    <span class="ml-3 text-sm">88 business owners joined this week</span>
+  </div>
+
+  <!-- Main CTA Button -->
+  <div class="max-w-md mx-auto space-y-4">
+    <button 
+      onclick="window.location.href=appendParamsToUrl('https://elvian.ai')" 
+      class="w-full group relative bg-gradient-to-r from-primary to-primary/90 hover:from-primary/90 hover:to-primary text-white text-xl font-bold px-12 py-6 rounded-lg transform transition-all duration-200 hover:scale-105 hover:shadow-xl">
+      <div class="absolute inset-0 bg-white/10 rounded-lg animate-pulse"></div>
+      <span class="relative">
+        CLAIM YOUR EARLY ACCESS SPOT NOW
+        <span class="block text-sm font-normal mt-1">Limited Time 50% Discount</span>
+      </span>
+    </button>
+
+    <!-- Trust Badges -->
+    <div class="flex items-center justify-center space-x-4 text-sm text-white/80">
+      <div class="flex items-center">
+        <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+          <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/>
+        </svg>
+        30-Day Guarantee
+      </div>
+      <div class="flex items-center">
+        <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+          <path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z"/>
+        </svg>
+        Secure Payment
+      </div>
+      <div class="flex items-center">
+        <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+          <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zm5 2v2a7 7 0 11-14 0V8h14z"/>
+        </svg>
+        24/7 Support
+      </div>
+    </div>
+  </div>
+
+  <!-- Risk Reversal -->
+  <div class="mt-6 text-sm text-white/80">
+    <p>No credit card required • Cancel anytime • Instant access</p>
+  </div>
+</section>
+
+          <!-- Comments Section -->
+          <section class="mt-16 border-t pt-12">
+            <div class="flex items-center justify-between mb-8">
+              <h2 class="text-h2 font-bold text-gray-900 mb-4">Comments (187)</h2>
+              <select class="px-3 py-2 border rounded-lg text-sm">
+                <option>Most Relevant</option>
+                <option>Newest</option>
+                <option>Oldest</option>
+              </select>
+            </div>
+
+            <!-- Comments List -->
+            <div class="space-y-8">
+              <!-- Featured Comment -->
+              <div class="comment-card">
+                <div class="flex items-start gap-4">
+                  <div class="flex-1 space-y-2">
+                    <div class="flex items-center justify-between">
+                      <div>
+                        <span class="font-bold text-gray-900">David Thompson</span>
+                        <span class="text-base font-sans text-body text-gray-500 mx-2">•</span>
+                        <span class="text-base font-sans text-body text-gray-600">CEO, E-commerce</span>
+                      </div>
+                      <span class="text-base font-sans text-body text-gray-500 text-sm">2 hours ago</span>
+                    </div>
+                    <p class="text-base font-sans text-body text-gray-700">Never write reviews but had to share this. After losing my top 3 salespeople in one month and watching $200k+ in leads die, I was desperate. Took a chance on Elvian and... mind blown. First week: 300+ calls/day, zero missed opportunities, 2 huge deals closed. Best part? No more 3am anxiety about who's quitting next. This is the real deal guys.</p>
+                    
+                    <!-- Nested Replies -->
+                    <div class="mt-4 pl-6 border-l-2 space-y-4">
+                      <div class="comment-reply">
+                        <div class="flex items-center justify-between mb-2">
+                          <div>
+                            <span class="font-bold text-gray-900">Mark Stevens</span>
+                          </div>
+                          <span class="text-base font-sans text-body text-gray-500 text-sm">15 minutes ago</span>
+                        </div>
+                        <p class="text-base font-sans text-body text-gray-700">How fast did you get it running? Any tech headaches during setup?</p>
+                      </div>
+                      
+                      <div class="comment-reply">
+                        <div class="flex items-center justify-between mb-2">
+                          <div>
+                            <span class="font-bold text-gray-900">David Thompson</span>
+                          </div>
+                          <span class="text-base font-sans text-body text-gray-500 text-sm">8 minutes ago</span>
+                        </div>
+                        <p class="text-base font-sans text-body text-gray-700">Surprisingly smooth - about 48hrs from signup to first calls. Their team handled everything. Way easier than training new sales reps lol</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Sarah's Comment -->
+              <div class="comment-card">
+                <div class="flex items-start gap-4">
+                  <div class="flex-1 space-y-2">
+                    <div class="flex items-center justify-between">
+                      <div>
+                        <span class="font-bold text-gray-900">Sarah Chen</span>
+                        <span class="text-base font-sans text-body text-gray-500 mx-2">•</span>
+                        <span class="text-base font-sans text-body text-gray-600">Founder</span>
+                      </div>
+                      <span class="text-base font-sans text-body text-gray-500 text-sm">1 day ago</span>
+                    </div>
+                    <div class="space-y-2">
+                      <p class="text-base font-sans text-body text-gray-700">Quick update after 30 days:</p>
+                      <ul class="list-disc pl-5 space-y-1">
+                        <li class="text-base font-sans text-body text-gray-700">IT worked like a charm</li>
+                        <li class="text-base font-sans text-body text-gray-700">Revenue up 285%</li>
+                      </ul>
+                      <p class="text-base font-sans text-body text-gray-700">Still can't believe we waited so long to make the switch. For anyone on the fence - just do it. This is the future.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Alex's Comment with Replies -->
+              <div class="comment-card">
+                <div class="flex items-start gap-4">
+                  <div class="flex-1 space-y-2">
+                    <div class="flex items-center justify-between">
+                      <div>
+                        <span class="font-bold text-gray-900">Alex Rodriguez</span>
+                        <span class="text-base font-sans text-body text-gray-500 mx-2">•</span>
+                        <span class="text-base font-sans text-body text-gray-600">SaaS Owner</span>
+                      </div>
+                      <span class="text-base font-sans text-body text-gray-500 text-sm">3 hours ago</span>
+                    </div>
+                    <p class="text-base font-sans text-body text-gray-700">Bit skeptical about the AI handling complex B2B sales... but wow. It's actually closing BETTER than our human team did. More consistent, never drops the ball on follow-up, and the conversion rates are nuts. Only issue? Wish I'd found this sooner 😅</p>
+
+                    <!-- Nested Replies -->
+                    <div class="mt-4 pl-6 border-l-2 space-y-4">
+                      <div class="comment-reply">
+                        <div class="flex items-center justify-between mb-2">
+                          <div>
+                            <span class="font-bold text-gray-900">James Wilson</span>
+                          </div>
+                          <span class="text-base font-sans text-body text-gray-500 text-sm">1 hour ago</span>
+                        </div>
+                        <p class="text-base font-sans text-body text-gray-700">How is it with objection handling? Our sales cycle is pretty complex</p>
+                      </div>
+
+                      <div class="comment-reply"></div>
+                        <div class="flex items-center justify-between mb-2">
+                          <div>
+                            <span class="font-bold text-gray-900">Alex Rodriguez</span>
+                          </div>
+                          <span class="text-base font-sans text-body text-gray-500 text-sm">45 minutes ago</span>
+                        </div>
+                        <p class="text-base font-sans text-body text-gray-700">Better than expected. It adapts in real-time and actually learns from each interaction. Haven't found an objection it can't handle yet.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Additional Comments -->
+          <div class="mt-8 space-y-8">
+            <!-- Emma Watson's Thread -->
+            <div class="comment-card">
+              <div class="flex items-start gap-4">
+                <div class="flex-1 space-y-2">
+                  <div class="flex items-center justify-between">
+                    <div>
+                      <span class="font-bold text-gray-900">Emma Watson</span>
+                      <span class="text-base font-sans text-body text-gray-500 mx-2">•</span>
+                      <span class="text-base font-sans text-body text-gray-600">E-commerce Director</span>
+                    </div>
+                    <span class="text-base font-sans text-body text-gray-500 text-sm">3 hours ago</span>
+                  </div>
+                  <p class="text-base font-sans text-body text-gray-700">Question for current users - how's it handling payment processing and integrations? We're using Stripe and Shopify.</p>
+
+                  <!-- Nested Replies -->
+                  <div class="mt-4 pl-6 border-l-2 space-y-4">
+                    <div class="comment-reply">
+                      <div class="flex items-center justify-between mb-2">
+                        <div>
+                          <span class="font-bold text-gray-900">Robert Chen</span>
+                        </div>
+                        <span class="text-base font-sans text-body text-gray-500 text-sm">1 hour ago</span>
+                      </div>
+                      <p class="text-base font-sans text-body text-gray-700">Works flawlessly with both. We're processing 3x more orders now because it follows up instantly on abandoned carts. Integration took like 30 mins.</p>
+                    </div>
+                    
+                    <div class="comment-reply">
+                      <div class="flex items-center justify-between mb-2">
+                        <div>
+                          <span class="font-bold text-gray-900">Emma Watson</span>
+                        </div>
+                        <span class="text-base font-sans text-body text-gray-500 text-sm">45 minutes ago</span>
+                      </div>
+                      <p class="text-base font-sans text-body text-gray-700">Perfect, exactly what I needed to know. Pulling the trigger now before prices go up!</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- David Lee's Thread -->
+            <div class="comment-card">
+              <div class="flex items-start gap-4">
+                <div class="flex-1 space-y-2">
+                  <div class="flex items-center justify-between">
+                    <div>
+                      <span class="font-bold text-gray-900">David Lee</span>
+                      <span class="text-base font-sans text-body text-gray-500 mx-2">•</span>
+                      <span class="text-base font-sans text-body text-gray-600">Tech Entrepreneur</span>
+                      <span class="bg-gray-100 text-primary text-xs px-2 py-1 rounded-full ml-2">Early Access Member</span>
+                    </div>
+                    <span class="text-base font-sans text-body text-gray-500 text-sm">1 hour ago</span>
+                  </div>
+                  <div class="space-y-2">
+                    <p class="text-base font-sans text-body text-gray-700">impressed</p>
+                    <ul class="list-disc pl-5 space-y-1 text-base font-sans text-body text-gray-700">
+                      <li>$2k monthly</li>
+                      <li>Sales performance</li>
+                      <li>Zero management</li>
+                      <li>24/7 coverage</li>
+                    </ul>
+                    <p class="text-base font-sans text-body text-gray-700">The math is obvious. This is the future.</p>
+                  </div>
+
+                  <!-- Nested Replies -->
+                  <div class="mt-4 pl-6 border-l-2 space-y-4">
+                    <div class="comment-reply">
+                      <div class="flex items-center justify-between mb-2">
+                        <div>
+                          <span class="font-bold text-gray-900">Sarah Thompson</span>
+                        </div>
+                        <span class="text-base font-sans text-body text-gray-500 text-sm">30 minutes ago</span>
+                      </div>
+                      <p class="text-base font-sans text-body text-gray-700">What about complex products? We sell enterprise software...</p>
+                    </div>
+                    
+                    <div class="comment-reply">
+                      <div class="flex items-center justify-between mb-2">
+                        <div>
+                          <span class="font-bold text-gray-900">David Lee</span>
+                        </div>
+                        <span class="text-base font-sans text-body text-gray-500 text-sm">15 minutes ago</span>
+                      </div>
+                      <p class="text-base font-sans text-body text-gray-700">I got impressed with how elvian handle complex sales. It never forgets details, impressive follow-up every time.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Final CTA Section -->
+          <section class="mt-16 bg-gray-800 text-white p-8 rounded-lg shadow-xl text-center">
+            <h2 class="text-h2 font-bold text-white mb-4">Ready to Transform Your Sales?</h2>
+            <div class="max-w-2xl mx-auto space-y-8">
+              <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-white/10 p-6 rounded-lg">
+                  <div class="text-4xl font-bold mb-2">12</div>
+                  <div class="text-base font-sans text-white text-primary">Early Access Spots Left</div>
+                </div>
+                <div class="bg-white/10 p-6 rounded-lg">
+                  <div class="text-4xl font-bold mb-2">50%</div>
+                  <div class="text-base font-sans text-white text-primary">Lifetime Discount</div>
+                </div>
+              </div>
+              
+              <button 
+                onclick="window.location.href=appendParamsToUrl('https://elvian.ai')" 
+                class="w-full group relative bg-gradient-to-r from-primary to-primary/90 hover:from-primary/90 hover:to-primary text-white text-xl font-bold px-12 py-6 rounded-lg transform transition-all duration-200 hover:scale-105 hover:shadow-xl">
+                <div class="absolute inset-0 bg-white/10 rounded-lg animate-pulse"></div>
+                <span class="relative">
+                  CLAIM YOUR EARLY ACCESS NOW
+                  <span class="block text-sm font-normal mt-1">Limited Time 50% Discount</span>
+                </span>
+              </button>
+              
+              <p class="text-white font-sans text-body text-primary text-sm">30-Day ROI Guarantee • No Long-Term Contract</p>
+            </div>
+          </section>
+        </div>
+      </article>
+
+      <!-- Sidebar -->
+      <aside class="hidden md:block">
+  <div class="sticky top-24 space-y-8">
+    <!-- Main CTA -->
+    <div class="bg-primary text-white p-6 rounded-lg shadow-lg">
+      <h3 class="text-xl font-bold mb-4">Ready to Transform Your Sales?</h3>
+      <p class="mb-6 text-white/90">Join hundreds of companies already transforming their sales with AI</p>
+      <a href="https://elvian.ai" class="block w-full">
+        <button 
+          onclick="window.location.href=appendParamsToUrl('https://elvian.ai')" 
+          class="w-full group relative bg-gradient-to-r from-primary to-primary/90 hover:from-primary/90 hover:to-primary text-white text-xl font-bold px-12 py-6 rounded-lg transform transition-all duration-200 hover:scale-105 hover:shadow-xl">
+          <div class="absolute inset-0 bg-white/10 rounded-lg animate-pulse"></div>
+          <span class="relative">
+            CLAIM YOUR EARLY ACCESS SPOT NOW
+            <span class="block text-sm font-normal mt-1">Limited Time 50% Discount</span>
+          </span>
+        </button>
+      </a>
+    </div>
+
+    <!-- Related Resources -->
+    <div class="bg-gray-50 rounded-lg p-6">
+      <h3 class="text-lg font-bold text-gray-900 mb-4">Related Resources</h3>
+      <div class="space-y-4">
+        <a href="https://elvian.ai" class="block p-4 bg-white rounded-lg border border-gray-200 hover:border-primary/20 hover:shadow-sm transition-all">
+          <span class="text-sm text-primary font-medium block mb-1">Guide</span>
+          <span class="font-medium block mb-2">How to Implement AI in Sales</span>
+          <span class="text-sm text-gray-600">5 min read</span>
+        </a>
+
+        <a href="https://elvian.ai" class="block p-4 bg-white rounded-lg border border-gray-200 hover:border-primary/20 hover:shadow-sm transition-all">
+          <span class="text-sm text-primary font-medium block mb-1">Case Study</span>
+          <span class="font-medium block mb-2">300% Sales Increase in 30 Days</span>
+          <span class="text-sm text-gray-600">8 min read</span>
+        </a>
+
+        <a href="https://elvian.ai" class="block p-4 bg-white rounded-lg border border-gray-200 hover:border-primary/20 hover:shadow-sm transition-all">
+          <span class="text-sm text-primary font-medium block mb-1">Webinar</span>
+          <span class="font-medium block mb-2">The Future of Sales with AI</span>
+          <span class="text-sm text-gray-600">Watch 45 min</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Stats Box -->
+    <div class="bg-gray-50 rounded-lg p-6">
+      <h3 class="text-lg font-bold text-gray-900 mb-4">Proven Results</h3>
+      <div class="space-y-4">
+        <div class="flex justify-between items-center">
+          <span class="text-gray-600">Average sales increase</span>
+          <span class="text-xl font-bold text-primary">312%</span>
+        </div>
+        <div class="flex justify-between items-center">
+          <span class="text-gray-600">Cost reduction</span>
+          <span class="text-xl font-bold text-primary">85%</span>
+        </div>
+        <div class="flex justify-between items-center">
+          <span class="text-gray-600">Average ROI</span>
+          <span class="text-xl font-bold text-primary">7.8x</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</aside>
+
+    </main>
+
+    <script src="main.js"></script>
+  </body>
+</html>
