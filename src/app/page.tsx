@@ -256,7 +256,7 @@ export default function Page() {
         </div>
       </header>
 
-      {isBot ? (
+      {false ? (
         // Content for Facebook robots
         <main className="container mx-auto px-4 py-8">
           <article className="max-w-3xl mx-auto prose prose-lg">
