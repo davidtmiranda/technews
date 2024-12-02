@@ -29,7 +29,7 @@ export default {
         fadeIn: "fadeIn 0.6s ease-out forwards",
       },
       fontSize: {
-        base: ["19px", "27px"],
+        base: "19px",
         h1: [
           "44px",
           {
@@ -53,7 +53,7 @@ export default {
         ],
         quote: ["21px", "32px"],
         stats: ["24px", "28px"],
-        cta: ["18px", "22px"],
+        cta: ["19px", "22px"],
       },
       fontWeight: {
         "extra-bold": "800",

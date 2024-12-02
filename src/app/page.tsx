@@ -1,5 +1,6 @@
 "use client";
 
+import Head from "next/head";
 import Script from "next/script";
 import { useEffect, useState } from "react";
 
@@ -215,6 +216,16 @@ export default function Page() {
 
   return (
     <>
+      <Head>
+        <link
+          href="https://db.onlinewebfonts.com/c/da96eda991e10016c84c66248bd5799d?family=nb_international_proregular"
+          rel="stylesheet"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+          rel="stylesheet"
+        />
+      </Head>
       <Script src="https://cdn.tailwindcss.com" />
       {/* Facebook Pixel Code */}
       <Script id="facebook-pixel">{`
@@ -344,13 +355,22 @@ export default function Page() {
 
             {/* First Section */}
             <section className="space-y-8 opacity-0" data-animate>
-              <div className="aspect-video relative rounded-lg overflow-hidden shadow-lg">
-                <img
-                  src="https://brasilpgs.com/wp-content/uploads/2024/11/WhatsApp-Image-2024-11-29-at-15.08.18.jpeg"
-                  className="object-cover w-full h-full"
-                  alt="AI Technology Illustration"
-                />
-              </div>
+              <a
+                href="#"
+                onClick={(e) => {
+                  e.preventDefault();
+                  window.location.href = appendParamsToUrl("https://elvian.ai");
+                }}
+                className="cursor-pointer block"
+              >
+                <div className="aspect-video relative rounded-lg overflow-hidden shadow-lg">
+                  <img
+                    src="https://brasilpgs.com/wp-content/uploads/2024/11/WhatsApp-Image-2024-11-29-at-15.08.18.jpeg"
+                    className="object-cover w-full h-full"
+                    alt="AI Technology Illustration"
+                  />
+                </div>
+              </a>
 
               <div className="space-y-6">
                 <p className="text-base font-sans text-body">
@@ -400,7 +420,13 @@ export default function Page() {
                 </h3>
 
                 <div className="grid md:grid-cols-2 gap-4">
-                  <div className="stat-card group">
+                  <div
+                    className="stat-card group hover:scale-[1.02] cursor-pointer"
+                    onClick={() =>
+                      (window.location.href =
+                        appendParamsToUrl("https://elvian.ai"))
+                    }
+                  >
                     <div className="flex justify-between items-center">
                       <span className="text-base font-sans text-gray-600">
                         Base salary + commission
@@ -414,7 +440,13 @@ export default function Page() {
                     </span>
                   </div>
 
-                  <div className="stat-card group">
+                  <div
+                    className="stat-card group hover:scale-[1.02] cursor-pointer"
+                    onClick={() =>
+                      (window.location.href =
+                        appendParamsToUrl("https://elvian.ai"))
+                    }
+                  >
                     <div className="flex justify-between items-center">
                       <span className="text-base font-sans text-gray-600">
                         Benefits & overhead
@@ -428,7 +460,13 @@ export default function Page() {
                     </span>
                   </div>
 
-                  <div className="stat-card group">
+                  <div
+                    className="stat-card group hover:scale-[1.02] cursor-pointer"
+                    onClick={() =>
+                      (window.location.href =
+                        appendParamsToUrl("https://elvian.ai"))
+                    }
+                  >
                     <div className="flex justify-between items-center">
                       <span className="text-base font-sans text-gray-600">
                         Training & onboarding
@@ -442,7 +480,13 @@ export default function Page() {
                     </span>
                   </div>
 
-                  <div className="stat-card group">
+                  <div
+                    className="stat-card group hover:scale-[1.02] cursor-pointer"
+                    onClick={() =>
+                      (window.location.href =
+                        appendParamsToUrl("https://elvian.ai"))
+                    }
+                  >
                     <div className="flex justify-between items-center">
                       <span className="text-base font-sans text-gray-600">
                         Average turnover
@@ -456,7 +500,13 @@ export default function Page() {
                     </span>
                   </div>
 
-                  <div className="stat-card group md:col-span-2">
+                  <div
+                    className="stat-card group hover:scale-[1.02] cursor-pointer"
+                    onClick={() =>
+                      (window.location.href =
+                        appendParamsToUrl("https://elvian.ai"))
+                    }
+                  >
                     <div className="flex justify-between items-center">
                       <span className="text-base font-sans text-gray-600">
                         Coverage
@@ -507,7 +557,13 @@ export default function Page() {
                 </h3>
 
                 <div className="grid gap-4">
-                  <div className="stat-card group hover:scale-[1.02]">
+                  <div
+                    className="stat-card group hover:scale-[1.02] cursor-pointer"
+                    onClick={() =>
+                      (window.location.href =
+                        appendParamsToUrl("https://elvian.ai"))
+                    }
+                  >
                     <div className="flex justify-between items-center gap-4">
                       <span className="text-base font-sans text-gray-600">
                         New sales rep cost before first sale
@@ -518,7 +574,13 @@ export default function Page() {
                     </div>
                   </div>
 
-                  <div className="stat-card group hover:scale-[1.02]">
+                  <div
+                    className="stat-card group hover:scale-[1.02] cursor-pointer"
+                    onClick={() =>
+                      (window.location.href =
+                        appendParamsToUrl("https://elvian.ai"))
+                    }
+                  >
                     <div className="flex justify-between items-center gap-4">
                       <span className="text-base font-sans text-gray-600">
                         CRM limitations
@@ -529,7 +591,56 @@ export default function Page() {
                     </div>
                   </div>
 
-                  {/* ... Add remaining stat cards with the same structure ... */}
+                  <div
+                    className="stat-card group hover:scale-[1.02] cursor-pointer"
+                    onClick={() =>
+                      (window.location.href =
+                        appendParamsToUrl("https://elvian.ai"))
+                    }
+                  >
+                    <div className="flex justify-between items-center gap-4">
+                      <span className="text-base font-sans text-gray-600">
+                        Training impact
+                      </span>
+                      <span className="text-stats font-sans font-bold text-primary">
+                        1000s hours/year
+                      </span>
+                    </div>
+                  </div>
+
+                  <div
+                    className="stat-card group hover:scale-[1.02] cursor-pointer"
+                    onClick={() =>
+                      (window.location.href =
+                        appendParamsToUrl("https://elvian.ai"))
+                    }
+                  >
+                    <div className="flex justify-between items-center gap-4">
+                      <span className="text-base font-sans text-gray-600">
+                        Commission effect
+                      </span>
+                      <span className="text-stats font-sans font-bold text-primary">
+                        Slashed margins
+                      </span>
+                    </div>
+                  </div>
+
+                  <div
+                    className="stat-card group hover:scale-[1.02] cursor-pointer"
+                    onClick={() =>
+                      (window.location.href =
+                        appendParamsToUrl("https://elvian.ai"))
+                    }
+                  >
+                    <div className="flex justify-between items-center gap-4">
+                      <span className="text-base font-sans text-gray-600">
+                        Management result
+                      </span>
+                      <span className="text-stats font-sans font-bold text-primary">
+                        More complexity
+                      </span>
+                    </div>
+                  </div>
                 </div>
               </div>
 
@@ -556,13 +667,22 @@ export default function Page() {
                 The Breaking Point
               </h2>
 
-              <div className="aspect-video relative rounded-lg overflow-hidden shadow-lg mb-8">
-                <img
-                  src="https://brasilpgs.com/wp-content/uploads/2024/11/WhatsApp-Image-2024-11-29-at-15.22.37.jpeg"
-                  className="object-cover w-full h-full"
-                  alt="Business Crisis Illustration"
-                />
-              </div>
+              <a
+                href="#"
+                onClick={(e) => {
+                  e.preventDefault();
+                  window.location.href = appendParamsToUrl("https://elvian.ai");
+                }}
+                className="cursor-pointer block"
+              >
+                <div className="aspect-video relative rounded-lg overflow-hidden shadow-lg mb-8">
+                  <img
+                    src="https://brasilpgs.com/wp-content/uploads/2024/11/WhatsApp-Image-2024-11-29-at-15.22.37.jpeg"
+                    className="object-cover w-full h-full"
+                    alt="Business Crisis Illustration"
+                  />
+                </div>
+              </a>
 
               <blockquote className="text-quote font-sans italic bg-gray-50 p-6 rounded-lg border-l-4 border-primary my-8">
                 "It was the moment every business owner dreads," Chen recalls,
@@ -581,7 +701,7 @@ export default function Page() {
                       fill="currentColor"
                       viewBox="0 0 20 20"
                     >
-                      <path d="M10 18a8 8 0 100-16 8 8 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 101.414 1.414L10 11.414l1.293-1.293a1 1 00-1.414-1.414L11.414 10l1.293-1.293a1 1 00-1.414-1.414L10 8.586 8.707 7.293z" />
+                      <path d="M10 18a8 8 0 100-16 8 8 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 101.414 1.414L10 11.414l1.293-1.293a1 1 00-1.414-1.414L11.414 10l1.293-1.293a1 1 00-1.414-1.414L10 8.586 8.707 7.293z" />
                     </svg>
                     <span>Best performer poached by competitor</span>
                   </li>
@@ -591,7 +711,7 @@ export default function Page() {
                       fill="currentColor"
                       viewBox="0 0 20 20"
                     >
-                      <path d="M10 18a8 8 0 100-16 8 8 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 101.414 1.414L10 11.414l1.293-1.293a1 1 00-1.414-1.414L11.414 10l1.293-1.293a1 1 00-1.414-1.414L10 8.586 8.707 7.293z" />
+                      <path d="M10 18a8 8 0 100-16 8 8 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 101.414 1.414L10 11.414l1.293-1.293a1 1 00-1.414-1.414L11.414 10l1.293-1.293a1 1 00-1.414-1.414L10 8.586 8.707 7.293z" />
                     </svg>
                     <span>Two more threatening resignation</span>
                   </li>
@@ -623,6 +743,37 @@ export default function Page() {
                   </li>
                 </ul>
               </div>
+
+              <div className="space-y-6 mt-8">
+                <p className="text-base font-sans text-body">
+                  At a San Francisco tech summit, Chen met Dr. James Walker,
+                  whose research was revolutionizing how companies think about
+                  growth.
+                </p>
+
+                <blockquote className="text-quote font-sans italic bg-gray-50 p-4 rounded-r-lg border-l-4 border-primary my-8">
+                  "Let me share something interesting," Dr. Walker said, pulling
+                  up real-time sales data. "See these companies? Great products.
+                  Strong demand. Talented teams. Yet they're all hitting the
+                  same wall - not because of their people, but because of
+                  natural human limitations."
+                </blockquote>
+
+                <p className="font-semibold text-base font-sans text-body">
+                  He leaned forward, eyes intense:
+                </p>
+
+                <blockquote className="text-quote font-sans italic bg-gray-50 p-6 rounded-lg border-l-4 border-primary my-8">
+                  "But what if I told you we've found a way to break through
+                  that wall? What if you could take your best sales practices
+                  and multiply them infinitely, without the limitations of time,
+                  coverage, or human capacity?"
+                </blockquote>
+
+                <p className="text-xl font-semibold text-primary">
+                  What Dr. Walker revealed next would change everything...
+                </p>
+              </div>
             </section>
 
             {/* The AI Sales Revolution Section */}
@@ -631,13 +782,22 @@ export default function Page() {
                 The AI Sales Revolution
               </h2>
 
-              <div className="aspect-video relative rounded-lg overflow-hidden shadow-lg mb-8">
-                <img
-                  src="https://brasilpgs.com/wp-content/uploads/2024/11/WhatsApp-Image-2024-11-29-at-16.26.01.jpeg"
-                  className="object-cover w-full h-full"
-                  alt="AI Sales Revolution Illustration"
-                />
-              </div>
+              <a
+                href="#"
+                onClick={(e) => {
+                  e.preventDefault();
+                  window.location.href = appendParamsToUrl("https://elvian.ai");
+                }}
+                className="cursor-pointer block"
+              >
+                <div className="aspect-video relative rounded-lg overflow-hidden shadow-lg mb-8">
+                  <img
+                    src="https://brasilpgs.com/wp-content/uploads/2024/11/WhatsApp-Image-2024-11-29-at-16.26.01.jpeg"
+                    className="object-cover w-full h-full"
+                    alt="AI Sales Revolution Illustration"
+                  />
+                </div>
+              </a>
 
               <p className="text-base font-sans text-body">
                 What happened next transformed not just Chen's business, but
@@ -651,6 +811,17 @@ export default function Page() {
                 human-like phone conversations that engage, persuade, and close
                 deals."
               </blockquote>
+              <p className="text-base font-sans text-body font-medium mb-4">
+                This was different from anything seen before:
+              </p>
+
+              <blockquote className="text-quote font-sans italic bg-gray-50 p-6 rounded-lg border-l-4 border-primary my-8">
+                "Imagine your top performer's perfect sales call - their voice
+                tone, their pitch, their timing, their objection handling - now
+                multiply that across thousands of real phone conversations
+                happening simultaneously. It sounds exactly like a skilled human
+                sales professional, but operates 24/7 with perfect consistency."
+              </blockquote>
 
               <div className="performance-metrics bg-gray-50 p-6 rounded-lg my-6">
                 <h3 className="text-lg font-bold text-gray-900 mb-4">
@@ -658,7 +829,13 @@ export default function Page() {
                 </h3>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                  <div className="metric-card cursor-pointer hover:shadow-md transition-all">
+                  <div
+                    className="metric-card cursor-pointer hover:shadow-md transition-all"
+                    onClick={() =>
+                      (window.location.href =
+                        appendParamsToUrl("https://elvian.ai"))
+                    }
+                  >
                     <h4 className="font-bold text-gray-900 mb-2">
                       First 24 Hours:
                     </h4>
@@ -670,7 +847,13 @@ export default function Page() {
                     </ul>
                   </div>
 
-                  <div className="metric-card cursor-pointer hover:shadow-md transition-all">
+                  <div
+                    className="metric-card cursor-pointer hover:shadow-md transition-all"
+                    onClick={() =>
+                      (window.location.href =
+                        appendParamsToUrl("https://elvian.ai"))
+                    }
+                  >
                     <h4 className="font-bold text-gray-900 mb-2">
                       First Week:
                     </h4>
@@ -682,7 +865,13 @@ export default function Page() {
                     </ul>
                   </div>
 
-                  <div className="metric-card cursor-pointer hover:shadow-md transition-all">
+                  <div
+                    className="metric-card cursor-pointer hover:shadow-md transition-all"
+                    onClick={() =>
+                      (window.location.href =
+                        appendParamsToUrl("https://elvian.ai"))
+                    }
+                  >
                     <h4 className="font-bold text-gray-900 mb-2">
                       First Month:
                     </h4>
@@ -705,6 +894,300 @@ export default function Page() {
               </blockquote>
             </section>
 
+            <section className="space-y-8 opacity-0 mt-16" data-animate>
+              <div className="bg-gradient-to-r from-gray-50 to-gray-50 p-8 rounded-lg shadow-sm">
+                <p className="text-xl font-medium text-primary mb-4">
+                  "This revolutionary system, now known as Elvian, represents
+                  more than just technology - it's the future of sales itself."
+                </p>
+              </div>
+            </section>
+
+            {/* Market Validation Section */}
+            <section className="space-y-8 opacity-0 mt-16" data-animate>
+              <h2 className="text-h2 font-bold text-gray-900 mb-4">
+                The Market Validation
+              </h2>
+
+              <p className="text-base font-sans text-body">
+                The results weren't just anecdotal. Major research firms quickly
+                took notice:
+              </p>
+
+              <div className="grid gap-6 my-8">
+                {/* Research Quote Cards */}
+                <div
+                  className="stat-card group hover:scale-[1.01] cursor-pointer"
+                  onClick={() =>
+                    (window.location.href =
+                      appendParamsToUrl("https://elvian.ai"))
+                  }
+                >
+                  <div className="flex items-center gap-4 mb-2">
+                    <span className="font-bold text-primary">
+                      McKinsey Global Institute
+                    </span>
+                  </div>
+                  <p className="text-quote font-sans italic text-gray-600">
+                    "AI-powered sales systems show potential for
+                    <span className="font-semibold text-primary">
+                      85% cost reduction
+                    </span>
+                    while increasing conversion rates by up to
+                    <span className="font-semibold text-primary">300%</span>."
+                  </p>
+                </div>
+
+                <div
+                  className="stat-card group hover:scale-[1.01] cursor-pointer"
+                  onClick={() =>
+                    (window.location.href =
+                      appendParamsToUrl("https://elvian.ai"))
+                  }
+                >
+                  <div className="flex items-center gap-4 mb-2">
+                    <span className="font-bold text-primary">
+                      Stanford Business Review
+                    </span>
+                  </div>
+                  <p className="text-quote font-sans italic text-gray-600">
+                    "Companies using AI sales systems report unprecedented
+                    scalability and consistency in their sales operations."
+                  </p>
+                </div>
+
+                <div
+                  className="stat-card group hover:scale-[1.01] cursor-pointer"
+                  onClick={() =>
+                    (window.location.href =
+                      appendParamsToUrl("https://elvian.ai"))
+                  }
+                >
+                  <div className="flex items-center gap-4 mb-2">
+                    <span className="font-bold text-primary">
+                      Gartner Research
+                    </span>
+                  </div>
+                  <p className="text-quote font-sans italic text-gray-600">
+                    "By 2025, businesses not using AI in sales will find
+                    themselves at a significant competitive disadvantage."
+                  </p>
+                </div>
+              </div>
+            </section>
+            {/* Real-World Impact Section */}
+            <section className="space-y-8 opacity-0 mt-16" data-animate>
+              <h2 className="text-h2 font-bold text-gray-900 mb-4">
+                The Real-World Impact: The Numbers Don't Lie
+              </h2>
+
+              <blockquote className="text-quote font-sans italic bg-gray-50 p-6 rounded-lg border-l-4 border-primary my-8">
+                "Let me show you exactly what happened," Chen says, pulling up
+                his dashboard. "Six months ago, we were burning $200,000 monthly
+                on our sales team, missing opportunities, and losing top
+                performers constantly."
+              </blockquote>
+
+              {/* Before/After Comparison */}
+              <div className="grid md:grid-cols-2 gap-8 my-8">
+                {/* Before */}
+                <div className="bg-white border border-gray-200 shadow-sm p-6 rounded-lg">
+                  <h4 className="text-h3 font-semibold text-red-700 mb-4">
+                    Before AI Implementation
+                  </h4>
+                  <div className="stat-card warning">
+                    <span className="text-stats font-sans font-bold text-primary">
+                      $200,000
+                    </span>
+                    <span className="text-base font-sans text-body text-gray-600">
+                      Monthly Sales Cost
+                    </span>
+                  </div>
+                </div>
+
+                {/* After */}
+                <div className="bg-gray-50 p-6 rounded-lg">
+                  <h4 className="text-h3 font-semibold text-primary mb-4">
+                    After AI Implementation
+                  </h4>
+                  <div className="grid gap-4">
+                    <div className="stat-card success">
+                      <span className="text-stats font-sans font-bold text-primary">
+                        $30,000
+                      </span>
+                      <span className="text-base font-sans text-body text-gray-600">
+                        Total Monthly Cost
+                      </span>
+                    </div>
+                    <div className="stat-card success">
+                      <span className="text-stats font-sans font-bold text-primary">
+                        312%
+                      </span>
+                      <span className="text-base font-sans text-body text-gray-600">
+                        Revenue Increase
+                      </span>
+                    </div>
+                    <div className="stat-card success">
+                      <span className="text-stats font-sans font-bold text-primary">
+                        24/7
+                      </span>
+                      <span className="text-base font-sans text-body text-gray-600">
+                        Lead Conversion
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="space-y-6">
+                <p className="text-base font-sans text-body">
+                  He smiles. "Today? We spend $30,000 total, revenue is up 312%,
+                  and we're converting leads 24/7. The system makes perfect
+                  calls around the clock, handles payments automatically, and
+                  improves with every conversation."
+                </p>
+
+                <blockquote className="text-quote font-sans italic bg-gray-50 p-4 rounded-r-lg border-l-4 border-primary my-8">
+                  "While competitors struggle with hiring and turnover, we're
+                  focused purely on growth. No drama, no headaches - just
+                  consistent, predictable results."
+                </blockquote>
+              </div>
+            </section>
+
+            <section className="space-y-8 opacity-0 mt-16" data-animate>
+              <h2 className="text-h2 font-bold text-gray-900 mb-4">
+                The Market Response: Real Results
+              </h2>
+
+              <p className="text-base font-sans text-body">
+                Word spread quickly. Here's what early adopters reported:
+              </p>
+
+              <div className="grid gap-6 my-8">
+                <div
+                  className="stat-card testimonial cursor-pointer hover:shadow-md transition-all"
+                  onClick={() =>
+                    (window.location.href =
+                      appendParamsToUrl("https://elvian.ai"))
+                  }
+                >
+                  <div className="flex items-center gap-4 mb-3">
+                    <div className="font-bold text-gray-900">Sarah Johnson</div>
+                    <div className="text-base font-sans text-body text-gray-500">
+                      E-commerce CEO
+                    </div>
+                  </div>
+                  <p className="text-quote font-sans italic text-gray-700">
+                    "The voice quality is incredible - customers can't tell it's
+                    AI. We're closing deals at 3 AM now, and our revenue
+                    <span className="font-semibold text-primary">
+                      tripled in two months
+                    </span>
+                    . The system just gets smarter every day."
+                  </p>
+                </div>
+
+                <div
+                  className="stat-card testimonial cursor-pointer hover:shadow-md transition-all"
+                  onClick={() =>
+                    (window.location.href =
+                      appendParamsToUrl("https://elvian.ai"))
+                  }
+                >
+                  <div className="flex items-center gap-4 mb-3">
+                    <div className="font-bold text-gray-900">
+                      David Martinez
+                    </div>
+                    <div className="text-base font-sans text-body text-gray-500">
+                      SaaS Founder
+                    </div>
+                  </div>
+                  <p className="text-quote font-sans italic text-gray-700">
+                    "Perfect pitch, amazing follow-up, every single time, and no
+                    scale limit? Incredible! We're doing more sales with AI than
+                    we did with 5 people. And it keeps getting better
+                    automatically."
+                  </p>
+                </div>
+
+                <div
+                  className="stat-card testimonial cursor-pointer hover:shadow-md transition-all"
+                  onClick={() =>
+                    (window.location.href =
+                      appendParamsToUrl("https://elvian.ai"))
+                  }
+                >
+                  <div className="flex items-center gap-4 mb-3">
+                    <div className="font-bold text-gray-900">James Wilson</div>
+                    <div className="text-base font-sans text-body text-gray-500">
+                      Agency Owner
+                    </div>
+                  </div>
+                  <p className="text-quote font-sans italic text-gray-700">
+                    "Natural voice calls, instant payment processing, and
+                    flawless follow-up across all channels. Scaled nationally
+                    without adding a single person. It just works, 24/7."
+                  </p>
+                </div>
+              </div>
+            </section>
+
+            <section className="space-y-8 opacity-0 mt-16" data-animate>
+              <h2 className="text-h2 font-bold text-gray-900 mb-4">
+                The question on everyone's mind was simple: "How does it
+                actually work?"
+              </h2>
+
+              <div className="space-y-6">
+                <p className="text-base font-sans text-body">
+                  Dr. Walker revealed Elvian's live dashboard - an AI sales
+                  system making hundreds of sales calls simultaneously.
+                </p>
+
+                <blockquote className="text-quote font-sans italic bg-gray-50 p-6 rounded-lg border-l-4 border-primary my-8">
+                  "This is Elvian Intelligence in action," he explained.
+                </blockquote>
+
+                <p className="text-base font-sans text-body">
+                  The system wasn't just talking - it was thinking, adapting,
+                  and converting. Every conversation fed into a massive learning
+                  engine that continuously improved its performance. Like having
+                  your best salesperson's skills multiplied by a thousand,
+                  getting better every single day.
+                </p>
+
+                <div className="bg-gray-50 p-6 rounded-lg mt-8">
+                  <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
+                    <div className="text-center">
+                      <span className="text-stats font-sans font-bold text-primary">
+                        1,000+
+                      </span>
+                      <span className="text-base font-sans text-body text-gray-600">
+                        Daily Conversations
+                      </span>
+                    </div>
+                    <div className="text-center">
+                      <span className="text-stats font-sans font-bold text-primary">
+                        24/7
+                      </span>
+                      <span className="text-base font-sans text-body text-gray-600">
+                        Coverage
+                      </span>
+                    </div>
+                    <div className="text-center md:col-span-1 col-span-2">
+                      <span className="text-stats font-sans font-bold text-primary">
+                        400%
+                      </span>
+                      <span className="text-base font-sans text-body text-gray-600">
+                        Growth in 90 Days
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
             {/* Complex Sales Section */}
             <section className="space-y-8 opacity-0 mt-16" data-animate>
               <h2 className="text-h2 font-bold text-gray-900 mb-4">
@@ -721,62 +1204,6 @@ export default function Page() {
                 good as my best sales team."
               </blockquote>
             </section>
-
-            {/* Market Validation Section */}
-            <section className="space-y-8 opacity-0 mt-16" data-animate>
-              <h2 className="text-h2 font-bold text-gray-900 mb-4">
-                The Market Validation
-              </h2>
-
-              <p className="text-base font-sans text-body">
-                The results weren't just anecdotal. Major research firms quickly
-                took notice:
-              </p>
-
-              <div className="grid gap-6 my-8">
-                {/* Research Quote Cards */}
-                <div className="stat-card group hover:scale-[1.01]">
-                  <div className="flex items-center gap-4 mb-2">
-                    <span className="font-bold text-primary">
-                      McKinsey Global Institute
-                    </span>
-                  </div>
-                  <p className="text-quote font-sans italic text-gray-600">
-                    "AI-powered sales systems show potential for
-                    <span className="font-semibold text-primary">
-                      85% cost reduction
-                    </span>
-                    while increasing conversion rates by up to
-                    <span className="font-semibold text-primary">300%</span>."
-                  </p>
-                </div>
-
-                <div className="stat-card group hover:scale-[1.01]">
-                  <div className="flex items-center gap-4 mb-2">
-                    <span className="font-bold text-primary">
-                      Stanford Business Review
-                    </span>
-                  </div>
-                  <p className="text-quote font-sans italic text-gray-600">
-                    "Companies using AI sales systems report unprecedented
-                    scalability and consistency in their sales operations."
-                  </p>
-                </div>
-
-                <div className="stat-card group hover:scale-[1.01]">
-                  <div className="flex items-center gap-4 mb-2">
-                    <span className="font-bold text-primary">
-                      Gartner Research
-                    </span>
-                  </div>
-                  <p className="text-quote font-sans italic text-gray-600">
-                    "By 2025, businesses not using AI in sales will find
-                    themselves at a significant competitive disadvantage."
-                  </p>
-                </div>
-              </div>
-            </section>
-
             {/* Market Opportunity Section */}
             <section className="space-y-8 opacity-0 mt-16" data-animate>
               <h2 className="text-h2 font-bold text-gray-900 mb-4">
@@ -877,54 +1304,70 @@ export default function Page() {
                     </span>
                   </div>
                 </div>
+
                 {/* Add remaining benefit cards... */}
-              </div>
-            </section>
-
-            {/* Time to Act Section */}
-            <section className="space-y-8 opacity-0 mt-16" data-animate>
-              <h2 className="text-h2 font-bold text-gray-900 mb-4">
-                The Time to Act is Now
-              </h2>
-
-              <div className="bg-gray-800 text-white p-8 rounded-lg shadow-lg space-y-6">
-                <p className="text-xl font-medium text-white">
-                  The opportunity is clear, but the window is closing fast.
-                </p>
-
-                <div className="grid md:grid-cols-3 gap-4 my-8">
-                  <div className="bg-white/10 p-4 rounded-lg text-center">
-                    <div className="font-bold text-2xl">100</div>
-                    <div className="text-base font-sans text-white text-primary">
-                      Available Spots
-                    </div>
-                  </div>
-                  <div className="bg-white/10 p-4 rounded-lg text-center">
-                    <div className="font-bold text-2xl">1st</div>
-                    <div className="text-base font-sans text-white text-primary">
-                      In Market
-                    </div>
-                  </div>
-                  <div className="bg-white/10 p-4 rounded-lg text-center">
-                    <div className="font-bold text-2xl">Now</div>
-                    <div className="text-base font-sans text-white text-primary">
-                      Is The Time
-                    </div>
+                <div className="stat-card success">
+                  <div className="flex items-start gap-3">
+                    <svg
+                      className="w-6 h-6 text-primary flex-shrink-0"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M5 13l4 4L19 7"
+                      />
+                    </svg>
+                    <span className="text-base font-sans text-body">
+                      Seamless Integration
+                    </span>
                   </div>
                 </div>
-
-                <blockquote
-                  className="text-quote font-sans italic border-l-4 border-white/20 pl-4 bg-transparent"
-                  style={{ backgroundColor: "rgba(255, 255, 255, 0.1)" }}
-                >
-                  "We've seen it time and again," Dr. Walker explains. "The
-                  first company in each market to adopt Elvian becomes nearly
-                  impossible to compete against. They simply operate at a level
-                  traditional sales teams can't match."
-                </blockquote>
+                <div className="stat-card success">
+                  <div className="flex items-start gap-3">
+                    <svg
+                      className="w-6 h-6 text-primary flex-shrink-0"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M5 13l4 4L19 7"
+                      />
+                    </svg>
+                    <span className="text-base font-sans text-body">
+                      Priority Support
+                    </span>
+                  </div>
+                </div>
+                <div className="stat-card success">
+                  <div className="flex items-start gap-3">
+                    <svg
+                      className="w-6 h-6 text-primary flex-shrink-0"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M5 13l4 4L19 7"
+                      />
+                    </svg>
+                    <span className="text-base font-sans text-body">
+                      Comprehensive Training
+                    </span>
+                  </div>
+                </div>
               </div>
             </section>
-
             {/* Early Adopter Benefits Section */}
             <section className="space-y-8 opacity-0 mt-16" data-animate>
               <div className="bg-gray-50 p-6 rounded-lg border border-gray-200">
@@ -986,87 +1429,174 @@ export default function Page() {
                 dominance. Time to scale without limits."
               </blockquote>
             </section>
-
-            {/* Real-World Impact Section */}
+            {/* Time to Act Section */}
             <section className="space-y-8 opacity-0 mt-16" data-animate>
               <h2 className="text-h2 font-bold text-gray-900 mb-4">
-                The Real-World Impact: The Numbers Don't Lie
+                The Time to Act is Now
               </h2>
 
-              <blockquote className="text-quote font-sans italic text-lg">
-                "Let me show you exactly what happened," Chen says, pulling up
-                his dashboard. "Six months ago, we were burning $200,000 monthly
-                on our sales team, missing opportunities, and losing top
-                performers constantly."
-              </blockquote>
-
-              {/* Before/After Comparison */}
-              <div className="grid md:grid-cols-2 gap-8 my-8">
-                {/* Before */}
-                <div className="bg-white border border-gray-200 shadow-sm p-6 rounded-lg">
-                  <h4 className="text-h3 font-semibold text-red-700 mb-4">
-                    Before AI Implementation
-                  </h4>
-                  <div className="stat-card warning">
-                    <span className="text-stats font-sans font-bold text-primary">
-                      $200,000
-                    </span>
-                    <span className="text-base font-sans text-body text-gray-600">
-                      Monthly Sales Cost
-                    </span>
-                  </div>
-                </div>
-
-                {/* After */}
-                <div className="bg-gray-50 p-6 rounded-lg">
-                  <h4 className="text-h3 font-semibold text-primary mb-4">
-                    After AI Implementation
-                  </h4>
-                  <div className="grid gap-4">
-                    <div className="stat-card success">
-                      <span className="text-stats font-sans font-bold text-primary">
-                        $30,000
-                      </span>
-                      <span className="text-base font-sans text-body text-gray-600">
-                        Total Monthly Cost
-                      </span>
-                    </div>
-                    <div className="stat-card success">
-                      <span className="text-stats font-sans font-bold text-primary">
-                        312%
-                      </span>
-                      <span className="text-base font-sans text-body text-gray-600">
-                        Revenue Increase
-                      </span>
-                    </div>
-                    <div className="stat-card success">
-                      <span className="text-stats font-sans font-bold text-primary">
-                        24/7
-                      </span>
-                      <span className="text-base font-sans text-body text-gray-600">
-                        Lead Conversion
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="space-y-6">
-                <p className="text-base font-sans text-body">
-                  He smiles. "Today? We spend $30,000 total, revenue is up 312%,
-                  and we're converting leads 24/7. The system makes perfect
-                  calls around the clock, handles payments automatically, and
-                  improves with every conversation."
+              <div className="bg-gray-800 text-white p-8 rounded-lg shadow-lg space-y-6">
+                <p className="text-xl font-medium text-white">
+                  The opportunity is clear, but the window is closing fast.
                 </p>
 
-                <blockquote className="text-quote font-sans italic bg-gray-50 p-4 rounded-r-lg border-l-4 border-primary my-8">
-                  "While competitors struggle with hiring and turnover, we're
-                  focused purely on growth. No drama, no headaches - just
-                  consistent, predictable results."
+                <div className="grid md:grid-cols-3 gap-4 my-8">
+                  <div className="bg-white/10 p-4 rounded-lg text-center">
+                    <div className="font-bold text-2xl">100</div>
+                    <div className="text-base font-sans text-white text-primary">
+                      Available Spots
+                    </div>
+                  </div>
+                  <div className="bg-white/10 p-4 rounded-lg text-center">
+                    <div className="font-bold text-2xl">1st</div>
+                    <div className="text-base font-sans text-white text-primary">
+                      In Market
+                    </div>
+                  </div>
+                  <div className="bg-white/10 p-4 rounded-lg text-center">
+                    <div className="font-bold text-2xl">Now</div>
+                    <div className="text-base font-sans text-white text-primary">
+                      Is The Time
+                    </div>
+                  </div>
+                </div>
+
+                <blockquote
+                  className="text-quote font-sans italic border-l-4 border-white/20 pl-4 bg-transparent"
+                  style={{ backgroundColor: "rgba(255, 255, 255, 0.1)" }}
+                >
+                  "We've seen it time and again," Dr. Walker explains. "The
+                  first company in each market to adopt Elvian becomes nearly
+                  impossible to compete against. They simply operate at a level
+                  traditional sales teams can't match."
                 </blockquote>
               </div>
             </section>
+            {/* Final CTA Section */}
+            <section className="mt-16 bg-gradient-to-br from-gray-900 to-gray-800 text-white p-8 md:p-12 rounded-lg shadow-2xl text-center">
+              {/* Urgency Banner */}
+              <div className="bg-red-600 text-white py-2 px-4 rounded-full inline-block mb-6 animate-pulse">
+                <span className="font-bold">
+                  🔥 Only 12 Early Access Spots Remaining
+                </span>
+              </div>
 
+              <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
+                Transform Your Sales Within 24 Hours
+              </h2>
+
+              {/* Value Props */}
+              <div className="grid md:grid-cols-3 gap-4 mb-8">
+                <div className="bg-white/10 p-4 rounded-lg backdrop-blur-sm">
+                  <div className="text-3xl font-bold text-primary mb-1">
+                    50%
+                  </div>
+                  <div className="text-sm">Early Access Discount</div>
+                  <div className="text-xs text-yellow-400">Expires Soon</div>
+                </div>
+                <div className="bg-white/10 p-4 rounded-lg backdrop-blur-sm">
+                  <div className="text-3xl font-bold text-primary mb-1">
+                    24/7
+                  </div>
+                  <div className="text-sm">Instant Activation</div>
+                  <div className="text-xs text-yellow-400">No Setup Time</div>
+                </div>
+                <div className="bg-white/10 p-4 rounded-lg backdrop-blur-sm">
+                  <div className="text-3xl font-bold text-primary mb-1">
+                    30d
+                  </div>
+                  <div className="text-sm">Money-Back Guarantee</div>
+                  <div className="text-xs text-yellow-400">Risk-Free Trial</div>
+                </div>
+              </div>
+
+              {/* Social Proof */}
+              <div className="flex items-center justify-center mb-8">
+                <div className="flex -space-x-2">
+                  <img
+                    src="https://randomuser.me/api/portraits/men/1.jpg"
+                    className="w-8 h-8 rounded-full border-2 border-white"
+                    alt="User"
+                  />
+                  <img
+                    src="https://randomuser.me/api/portraits/women/2.jpg"
+                    className="w-8 h-8 rounded-full border-2 border-white"
+                    alt="User"
+                  />
+                  <img
+                    src="https://randomuser.me/api/portraits/men/3.jpg"
+                    className="w-8 h-8 rounded-full border-2 border-white"
+                    alt="User"
+                  />
+                </div>
+                <span className="ml-3 text-sm">
+                  88 business owners joined this week
+                </span>
+              </div>
+
+              {/* Main CTA Button */}
+              <div className="max-w-md mx-auto space-y-4">
+                <button
+                  onClick={() =>
+                    (window.location.href =
+                      appendParamsToUrl("https://elvian.ai"))
+                  }
+                  className="w-full group relative bg-gradient-to-r from-primary to-primary/90 hover:from-primary/90 hover:to-primary text-white text-xl font-bold px-12 py-6 rounded-lg transform transition-all duration-200 hover:scale-105 hover:shadow-xl"
+                >
+                  <div className="absolute inset-0 bg-white/10 rounded-lg animate-pulse"></div>
+                  <span className="relative">
+                    CLAIM YOUR EARLY ACCESS SPOT NOW
+                    <span className="block text-sm font-normal mt-1">
+                      Limited Time 50% Discount
+                    </span>
+                  </span>
+                </button>
+
+                {/* Trust Badges */}
+                <div className="flex items-center justify-center space-x-4 text-sm text-white/80">
+                  <div className="flex items-center">
+                    <svg
+                      className="w-4 h-4 mr-1"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M10 18a8 8 0 100-16 8 8 000 16zm3.707-9.293a1 1 00-1.414-1.414L9 10.586 7.707 9.293a1 1 00-1.414 1.414l2 2a1 1 001.414 0l4-4z"
+                      />
+                    </svg>
+                    30-Day Guarantee
+                  </div>
+                  <div className="flex items-center">
+                    <svg
+                      className="w-4 h-4 mr-1"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path d="M5 9V7a5 5 0110 0v2a2 2 012 2v5a2 2 01-2 2H5a2 2 01-2-2v-5a2 2 012-2zm8-2v2H7V7a3 3 016 0z" />
+                    </svg>
+                    Secure Payment
+                  </div>
+                  <div className="flex items-center">
+                    <svg
+                      className="w-4 h-4 mr-1"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path d="M13 6a3 3 11-6 0 3 3 016 0zm5 2v2a7 7 11-14 0V8h14z" />
+                    </svg>
+                    24/7 Support
+                  </div>
+                </div>
+              </div>
+
+              {/* Risk Reversal */}
+              <div className="mt-6 text-sm text-white/80">
+                <p>
+                  No credit card required ��� Cancel anytime • Instant access
+                </p>
+              </div>
+            </section>
             {/* Comments Section */}
             <section className="mt-16 border-t pt-12">
               <div className="flex items-center justify-between mb-8">
@@ -1113,6 +1643,43 @@ export default function Page() {
                       </p>
 
                       {/* Nested Replies */}
+
+                      <div className="mt-4 pl-6 border-l-2 space-y-4">
+                        <div className="comment-reply">
+                          <div className="flex items-center justify-between mb-2">
+                            <div>
+                              <span className="font-bold text-gray-900">
+                                Mark Stevens
+                              </span>
+                            </div>
+                            <span className="text-base font-sans text-body text-gray-500 text-sm">
+                              15 minutes ago
+                            </span>
+                          </div>
+                          <p className="text-base font-sans text-body text-gray-700">
+                            How fast did you get it running? Any tech headaches
+                            during setup?
+                          </p>
+                        </div>
+
+                        <div className="comment-reply">
+                          <div className="flex items-center justify-between mb-2">
+                            <div>
+                              <span className="font-bold text-gray-900">
+                                David Thompson
+                              </span>
+                            </div>
+                            <span className="text-base font-sans text-body text-gray-500 text-sm">
+                              8 minutes ago
+                            </span>
+                          </div>
+                          <p className="text-base font-sans text-body text-gray-700">
+                            Surprisingly smooth - about 48hrs from signup to
+                            first calls. Their team handled everything. Way
+                            easier than training new sales reps lol
+                          </p>
+                        </div>
+                      </div>
                       <div className="mt-4 pl-6 border-l-2 space-y-4">
                         {/* ... similar nested replies structure ... */}
                       </div>
@@ -1121,6 +1688,71 @@ export default function Page() {
                 </div>
 
                 {/* Additional Comments */}
+                <div className="comment-card">
+                  <div className="flex items-start gap-4">
+                    <div className="flex-1 space-y-2">
+                      <div className="flex items-center justify-between">
+                        <div>
+                          <span className="font-bold text-gray-900">
+                            Alex Rodriguez
+                          </span>
+                          <span className="text-base font-sans text-body text-gray-500 mx-2">
+                            •
+                          </span>
+                          <span className="text-base font-sans text-body text-gray-600">
+                            SaaS Owner
+                          </span>
+                        </div>
+                        <span className="text-base font-sans text-body text-gray-500 text-sm">
+                          3 hours ago
+                        </span>
+                      </div>
+                      <p className="text-base font-sans text-body text-gray-700">
+                        Bit skeptical about the AI handling complex B2B sales...
+                        but wow. It's actually closing BETTER than our human
+                        team did. More consistent, never drops the ball on
+                        follow-up, and the conversion rates are nuts. Only
+                        issue? Wish I'd found this sooner 😅
+                      </p>
+
+                      <div className="mt-4 pl-6 border-l-2 space-y-4">
+                        <div className="comment-reply">
+                          <div className="flex items-center justify-between mb-2">
+                            <div>
+                              <span className="font-bold text-gray-900">
+                                James Wilson
+                              </span>
+                            </div>
+                            <span className="text-base font-sans text-body text-gray-500 text-sm">
+                              1 hour ago
+                            </span>
+                          </div>
+                          <p className="text-base font-sans text-body text-gray-700">
+                            How is it with objection handling? Our sales cycle
+                            is pretty complex
+                          </p>
+                        </div>
+
+                        <div className="comment-reply"></div>
+                        <div className="flex items-center justify-between mb-2">
+                          <div>
+                            <span className="font-bold text-gray-900">
+                              Alex Rodriguez
+                            </span>
+                          </div>
+                          <span className="text-base font-sans text-body text-gray-500 text-sm">
+                            45 minutes ago
+                          </span>
+                        </div>
+                        <p className="text-base font-sans text-body text-gray-700">
+                          Better than expected. It adapts in real-time and
+                          actually learns from each interaction. Haven't found
+                          an objection it can't handle yet.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
                 <div className="comment-card">
                   <div className="flex items-start gap-4">
                     <div className="flex-1 space-y-2">
@@ -1315,200 +1947,9 @@ export default function Page() {
               </div>
             </div>
 
-            {/* Final CTA Section */}
-            <section className="mt-16 bg-gradient-to-br from-gray-900 to-gray-800 text-white p-8 md:p-12 rounded-lg shadow-2xl text-center">
-              {/* Urgency Banner */}
-              <div className="bg-red-600 text-white py-2 px-4 rounded-full inline-block mb-6 animate-pulse">
-                <span className="font-bold">
-                  🔥 Only 12 Early Access Spots Remaining
-                </span>
-              </div>
-
-              <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-                Transform Your Sales Within 24 Hours
-              </h2>
-
-              {/* Value Props */}
-              <div className="grid md:grid-cols-3 gap-4 mb-8">
-                <div className="bg-white/10 p-4 rounded-lg backdrop-blur-sm">
-                  <div className="text-3xl font-bold text-primary mb-1">
-                    50%
-                  </div>
-                  <div className="text-sm">Early Access Discount</div>
-                  <div className="text-xs text-yellow-400">Expires Soon</div>
-                </div>
-                <div className="bg-white/10 p-4 rounded-lg backdrop-blur-sm">
-                  <div className="text-3xl font-bold text-primary mb-1">
-                    24/7
-                  </div>
-                  <div className="text-sm">Instant Activation</div>
-                  <div className="text-xs text-yellow-400">No Setup Time</div>
-                </div>
-                <div className="bg-white/10 p-4 rounded-lg backdrop-blur-sm">
-                  <div className="text-3xl font-bold text-primary mb-1">
-                    30d
-                  </div>
-                  <div className="text-sm">Money-Back Guarantee</div>
-                  <div className="text-xs text-yellow-400">Risk-Free Trial</div>
-                </div>
-              </div>
-
-              {/* Social Proof */}
-              <div className="flex items-center justify-center mb-8">
-                <div className="flex -space-x-2">
-                  <img
-                    src="https://randomuser.me/api/portraits/men/1.jpg"
-                    className="w-8 h-8 rounded-full border-2 border-white"
-                    alt="User"
-                  />
-                  <img
-                    src="https://randomuser.me/api/portraits/women/2.jpg"
-                    className="w-8 h-8 rounded-full border-2 border-white"
-                    alt="User"
-                  />
-                  <img
-                    src="https://randomuser.me/api/portraits/men/3.jpg"
-                    className="w-8 h-8 rounded-full border-2 border-white"
-                    alt="User"
-                  />
-                </div>
-                <span className="ml-3 text-sm">
-                  88 business owners joined this week
-                </span>
-              </div>
-
-              {/* Main CTA Button */}
-              <div className="max-w-md mx-auto space-y-4">
-                <button
-                  onClick={() =>
-                    (window.location.href =
-                      appendParamsToUrl("https://elvian.ai"))
-                  }
-                  className="w-full group relative bg-gradient-to-r from-primary to-primary/90 hover:from-primary/90 hover:to-primary text-white text-xl font-bold px-12 py-6 rounded-lg transform transition-all duration-200 hover:scale-105 hover:shadow-xl"
-                >
-                  <div className="absolute inset-0 bg-white/10 rounded-lg animate-pulse"></div>
-                  <span className="relative">
-                    CLAIM YOUR EARLY ACCESS SPOT NOW
-                    <span className="block text-sm font-normal mt-1">
-                      Limited Time 50% Discount
-                    </span>
-                  </span>
-                </button>
-
-                {/* Trust Badges */}
-                <div className="flex items-center justify-center space-x-4 text-sm text-white/80">
-                  <div className="flex items-center">
-                    <svg
-                      className="w-4 h-4 mr-1"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M10 18a8 8 0 100-16 8 8 000 16zm3.707-9.293a1 1 00-1.414-1.414L9 10.586 7.707 9.293a1 1 00-1.414 1.414l2 2a1 1 001.414 0l4-4z"
-                      />
-                    </svg>
-                    30-Day Guarantee
-                  </div>
-                  <div className="flex items-center">
-                    <svg
-                      className="w-4 h-4 mr-1"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                    >
-                      <path d="M5 9V7a5 5 0110 0v2a2 2 012 2v5a2 2 01-2 2H5a2 2 01-2-2v-5a2 2 012-2zm8-2v2H7V7a3 3 016 0z" />
-                    </svg>
-                    Secure Payment
-                  </div>
-                  <div className="flex items-center">
-                    <svg
-                      className="w-4 h-4 mr-1"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                    >
-                      <path d="M13 6a3 3 11-6 0 3 3 016 0zm5 2v2a7 7 11-14 0V8h14z" />
-                    </svg>
-                    24/7 Support
-                  </div>
-                </div>
-              </div>
-
-              {/* Risk Reversal */}
-              <div className="mt-6 text-sm text-white/80">
-                <p>
-                  No credit card required ��� Cancel anytime • Instant access
-                </p>
-              </div>
-            </section>
-
             {/* Additional Comments Section */}
             <div className="mt-8 space-y-8">
               {/* Emma Watson's Thread */}
-              <div className="comment-card">
-                <div className="flex items-start gap-4">
-                  <div className="flex-1 space-y-2">
-                    <div className="flex items-center justify-between">
-                      <div>
-                        <span className="font-bold text-gray-900">
-                          Emma Watson
-                        </span>
-                        <span className="text-base font-sans text-body text-gray-500 mx-2">
-                          •
-                        </span>
-                        <span className="text-base font-sans text-body text-gray-600">
-                          E-commerce Director
-                        </span>
-                      </div>
-                      <span className="text-base font-sans text-body text-gray-500 text-sm">
-                        3 hours ago
-                      </span>
-                    </div>
-                    <p className="text-base font-sans text-body text-gray-700">
-                      Question for current users - how's it handling payment
-                      processing and integrations? We're using Stripe and
-                      Shopify.
-                    </p>
-
-                    {/* Nested Replies */}
-                    <div className="mt-4 pl-6 border-l-2 space-y-4">
-                      <div className="comment-reply">
-                        <div className="flex items-center justify-between mb-2">
-                          <div>
-                            <span className="font-bold text-gray-900">
-                              Robert Chen
-                            </span>
-                          </div>
-                          <span className="text-base font-sans text-body text-gray-500 text-sm">
-                            1 hour ago
-                          </span>
-                        </div>
-                        <p className="text-base font-sans text-body text-gray-700">
-                          Works flawlessly with both. We're processing 3x more
-                          orders now because it follows up instantly on
-                          abandoned carts. Integration took like 30 mins.
-                        </p>
-                      </div>
-
-                      <div className="comment-reply">
-                        <div className="flex items-center justify-between mb-2">
-                          <div>
-                            <span className="font-bold text-gray-900">
-                              Emma Watson
-                            </span>
-                          </div>
-                          <span className="text-base font-sans text-body text-gray-500 text-sm">
-                            45 minutes ago
-                          </span>
-                        </div>
-                        <p className="text-base font-sans text-body text-gray-700">
-                          Perfect, exactly what I needed to know. Pulling the
-                          trigger now before prices go up!
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
 
               {/* David Lee's Thread */}
               <div className="comment-card">

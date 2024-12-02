@@ -13,14 +13,63 @@
     --foreground: #0a0a0a;
   }
 }
-
+@import url(https://db.onlinewebfonts.com/c/da96eda991e10016c84c66248bd5799d?family=nb_international_proregular);
 body {
-  color: var(--foreground);
+  color: rgb(33, 38, 35);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "nb_international_proregular", sans-serif;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 27px;
+}
+/* Headers */
+h1 {
+  font-size: 44px;
+  line-height: 48px;
+  letter-spacing: -0.6px;
+  font-weight: 800;
+}
+
+h2 {
+  font-size: 34px;
+  line-height: 38px;
+  letter-spacing: -0.4px;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 26px;
+  line-height: 30px;
+  letter-spacing: -0.3px;
+  font-weight: 600;
+}
+
+/* Quotes and testimonials */
+blockquote {
+  font-size: 21px;
+  line-height: 32px;
+  font-style: italic;
+}
+
+/* Stats and numbers */
+.stat-number {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 500;
+}
+
+/* CTA buttons */
+.cta-button {
+  font-size: 19px;
+  line-height: 22px;
+  font-weight: 500;
 }
 
 @layer components {
+  .text-body {
+    @apply text-[19px] leading-[27px] font-normal text-[rgb(33,38,35)];
+  }
+
   .stat-card {
     @apply bg-white border border-gray-200 p-6 rounded-lg transition-all duration-200;
   }
@@ -32,4 +81,40 @@ body {
   .stat-card.warning {
     @apply border-yellow-400/20 hover:border-yellow-400/30;
   }
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  body {
+    font-size: 19px;
+    line-height: 25px;
+  }
+
+  h1 {
+    font-size: 36px;
+    line-height: 40px;
+  }
+
+  h2 {
+    font-size: 28px;
+    line-height: 32px;
+  }
+
+  h3 {
+    font-size: 22px;
+    line-height: 26px;
+  }
+
+  blockquote {
+    font-size: 19px;
+    line-height: 28px;
+  }
+}
+
+article p {
+  font-family: "nb_international_proregular", sans-serif;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 27px;
+  color: rgb(33, 38, 35);
 }
